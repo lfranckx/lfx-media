@@ -1,4 +1,4 @@
-import '../styles/App.css';
+import '../styles/App.scss';
 import { withRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
