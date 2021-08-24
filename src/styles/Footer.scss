@@ -1,0 +1,31 @@
+footer {
+    background: #1ba49c;
+    padding: 9rem 0 6rem;
+
+    h1, p {
+        color: #fff;
+    }
+
+    #quote {
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        max-width: 600px;
+        margin: 2rem auto 2rem;
+
+        li {
+            i {
+                font-size: 32px;
+                color: #fff;
+            }
+        }
+    }
+
+    #copyright {
+        font-size: 16px;
+    }
+}

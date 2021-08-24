@@ -1,7 +1,80 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+}
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.app {
   text-align: center;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+h1, h2, h3, h4, h5, ul, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+h3, p {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0 20px 20px;
+}
+
+a {
+  color: #1ba49c;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  outline: unset;
+  border: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  border: #1ba49c solid 2px;
+  border-radius: 100px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #1ba49c;
+  color: #fff;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.hidden {
+  display: none;
 }
