@@ -13,6 +13,7 @@ export default function Homepage(props) {
             <header>
                 <h1>Front-end Developer, Full-stack Engineer <br/> &amp; SEO Manager</h1>
                 <h2>I build beautiful and effective online stores that help businesses succeed.</h2>
+                <img src='images/computer.png' alt='computer' />
             </header>
             <main>
                 <section id='about'>
@@ -53,7 +54,7 @@ export default function Homepage(props) {
 
                 <section id='projects'>
                     <h2>Featured Work</h2>
-                    <p>Here are a few professional projects I have recently built.Want to see more? <span><Link className='email' to='/'>Email me.</Link></span></p>
+                    <p>Here are a few professional projects I have recently built. Want to see more? <span><Link className='email' to='/'>Email me.</Link></span></p>
                     <ul>
                         <li className='card'>
                             <a  href='https://forevercurlsbyleysa.com/'
@@ -109,7 +110,7 @@ export default function Homepage(props) {
                         <h3>Hear what people have to say about me.</h3>
 
                         <div className='card'>
-                            <img src='https://picsum.photos/150/150' alt='headshot' />
+                            <img src='images/justine.jpg' alt='headshot' />
                             <h3>Justine Berger</h3>
                             <h4>COO, Social Arthouse</h4>
                             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor semper venenatis imperdiet, augue nisi feugiat augue, dapibus ultricies felis magna vestibulum felis.”</p>
