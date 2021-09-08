@@ -7,7 +7,7 @@ export default function Navbar(props) {
         <div id={props.id} className='nav'>
             <nav>
                 <Link to="/">
-                    <h1>LFX</h1>
+                    <h1><img src='/images/green-logo.png' alt='lfx media logo'/></h1>
                 </Link>
 
                 <Link className="btn" to="/contact">Get a quote</Link>

@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <h1>LFX</h1>
+                <h1><img src='images/white-logo.png' alt='white logo' width='100px'/></h1>
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
                 <ul>
                     <li><i class="fab fa-twitter"></i></li>
