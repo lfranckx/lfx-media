@@ -1,0 +1,16 @@
+#thankyou {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        span { 
+            display: block;
+            margin: 2px;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import '../styles/ThankYou.scss';
 
 export default function ThankYou() {
     return (
@@ -10,11 +11,8 @@ export default function ThankYou() {
                 <meta name='keywords' content='Web Developer, Web Designer, and SEO Manager' />
             </Helmet>
 
-            <main>
-                <h1>Thank you for contacting me. You will be hearing from me very soon. ^_^</h1>
-                <h2 className={'h2'}>
-                    <q>The best preparation for tomorrow is doing your best today.</q> - H. Jackson Brown, Jr.
-                </h2>
+            <main id='thankyou'>
+                <h1><span>Thank you for contacting me.</span>You will be hearing from me very soon.<span>^_^</span></h1>
             </main>
         </>
     )
