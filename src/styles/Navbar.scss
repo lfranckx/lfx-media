@@ -11,10 +11,12 @@
         padding: 10px;
 
         h1 {
-            font-size: 48px;
-
             img {
                 width: 120px;
+
+                @media (max-width: 750px) {
+                    width: 100px;
+                }
             }
         }
     }
