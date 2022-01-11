@@ -124,6 +124,15 @@ header {
             &:nth-child(4) {
                 background: #F29E66;
             }
+
+            &:nth-child(6) {
+                background-color: #000;
+                background-image: url('../images/Michelle.png');
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
         }
     }
 }

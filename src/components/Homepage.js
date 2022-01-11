@@ -101,6 +101,15 @@ export default function Homepage(props) {
                                 </div>
                             </a>
                         </li>
+                        <li className='card'>
+                            <a  href='https://www.michelleoconnorbeauty.com/'
+                                target="_blank" 
+                                rel="noopener noreferrer" >
+                                <div className='image-wrap'>
+                                    <img src='images/Michelle-text.png' alt='Michelle O Connor' width='300px' />
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </section>
 
