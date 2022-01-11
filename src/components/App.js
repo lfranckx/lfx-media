@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 
 import Navbar from './Navbar';
 import Homepage from './Homepage';
+import Contact from './Contact'
 import Footer from './Footer';
 
 function App() {
@@ -18,7 +19,10 @@ function App() {
       <div className='app'>
         <Navbar />
         <Switch>
-          <Homepage />
+          <Route exact path="/" component={Homepage} />
+          <Route exact path='/contact' component={Contact} />
+          {/* <Route exact path='/thankyou' component={ThankYou} />
+          <Route component={NotFoundPage} /><Homepage /> */}
         </Switch>
         <Footer />
       </div>
