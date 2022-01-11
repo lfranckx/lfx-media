@@ -6,9 +6,9 @@ import Projects from './Projects';
 import Services from './Services';
 
 export default function Homepage(props) {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
     
     return (
         <>
@@ -45,14 +45,16 @@ export default function Homepage(props) {
                         </div>
                     </section>
 
-                    <div className='contact'>
-                        <h3>Start a Project</h3>
-                        <p>
-                            Interested in working with me?<br/>
-                            Send me a message.
-                        </p>
-                        <Link className='btn' to='/contact'>Get Started</Link>
-                    </div>
+                    <section id='contact'>
+                        <div className='content-wrap'>
+                            <h3>Start a Project</h3>
+                            <p>
+                                Interested in working with me?<br/>
+                                Send me a message.
+                            </p>
+                            <Link className='btn' to='/contact'>Get Started</Link>
+                        </div>
+                    </section>
                 </main>
             </div>
         </>
