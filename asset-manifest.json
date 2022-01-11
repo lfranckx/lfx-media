@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/lfx-media/static/css/main.9853b3d5.chunk.css",
-    "main.js": "/lfx-media/static/js/main.23cf3b0b.chunk.js",
-    "main.js.map": "/lfx-media/static/js/main.23cf3b0b.chunk.js.map",
+    "main.js": "/lfx-media/static/js/main.bff50671.chunk.js",
+    "main.js.map": "/lfx-media/static/js/main.bff50671.chunk.js.map",
     "runtime-main.js": "/lfx-media/static/js/runtime-main.755a5552.js",
     "runtime-main.js.map": "/lfx-media/static/js/runtime-main.755a5552.js.map",
-    "static/js/2.3dedc0aa.chunk.js": "/lfx-media/static/js/2.3dedc0aa.chunk.js",
-    "static/js/2.3dedc0aa.chunk.js.map": "/lfx-media/static/js/2.3dedc0aa.chunk.js.map",
+    "static/js/2.29b19439.chunk.js": "/lfx-media/static/js/2.29b19439.chunk.js",
+    "static/js/2.29b19439.chunk.js.map": "/lfx-media/static/js/2.29b19439.chunk.js.map",
     "index.html": "/lfx-media/index.html",
     "static/css/main.9853b3d5.chunk.css.map": "/lfx-media/static/css/main.9853b3d5.chunk.css.map",
-    "static/js/2.3dedc0aa.chunk.js.LICENSE.txt": "/lfx-media/static/js/2.3dedc0aa.chunk.js.LICENSE.txt",
+    "static/js/2.29b19439.chunk.js.LICENSE.txt": "/lfx-media/static/js/2.29b19439.chunk.js.LICENSE.txt",
     "static/media/Projects.scss": "/lfx-media/static/media/wave-lines.fe8bd1ec.png"
   },
   "entrypoints": [
     "static/js/runtime-main.755a5552.js",
-    "static/js/2.3dedc0aa.chunk.js",
+    "static/js/2.29b19439.chunk.js",
     "static/css/main.9853b3d5.chunk.css",
-    "static/js/main.23cf3b0b.chunk.js"
+    "static/js/main.bff50671.chunk.js"
   ]
 }
