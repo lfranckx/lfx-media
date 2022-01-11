@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Helmet >
-        <title>LFX Media</title>
+        <title>LFX Media | Front-end Developer, Full-stack Engineer, SEO Manager</title>
         <meta name='description' content='I build beautiful and effective online stores that help businesses succeed.'/>
         <meta name='keywords' content='Front End Developer, Full Stack Engineer &amp; SEO Manager' />
       </Helmet>
