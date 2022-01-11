@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useHistory } from 'react-router';
 
-const ContactForm = () => {
+const Contact = () => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, [])
@@ -13,3 +13,5 @@ const ContactForm = () => {
         <></>
     )
 }
+
+export default Contact;

@@ -21,8 +21,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
-          {/* <Route exact path='/thankyou' component={ThankYou} />
-          <Route component={NotFoundPage} /><Homepage /> */}
         </Switch>
         <Footer />
       </div>
