@@ -36,7 +36,7 @@ header {
 }
 
 #services {
-    margin: -8rem auto 8rem;
+    margin: -8rem auto 10rem;
     max-width: 1200px;
 
     ul {
@@ -46,7 +46,7 @@ header {
 
         li {
             .card {
-                min-height: 400px;
+                min-height: 320px;
                 background-color: #fff;
                 box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
                 border-radius: 30px;
@@ -71,10 +71,11 @@ header {
 }
 
 #projects {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
 
     p {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
     }
 
     .email {
@@ -92,7 +93,7 @@ header {
         grid-row-gap: 30px;
 
         .card {
-            height: 340px;
+            height: 320px;
             border-radius: 30px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
 
@@ -103,6 +104,8 @@ header {
                 justify-content: center;
                 height: 100%;
             }
+
+            img { width: 250px; }
     
             &:nth-child(1) {
                 background: #F0BC68;
@@ -123,6 +126,11 @@ header {
             
             &:nth-child(4) {
                 background: #F29E66;
+                img { width: 230px; }
+            }
+
+            &:nth-child(5) {
+                img { width: 320px; }
             }
 
             &:nth-child(6) {
@@ -132,13 +140,15 @@ header {
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+
+                img { width: 320px; }
             }
         }
     }
 }
 
 #testimonials {
-    padding: 8rem 0 2rem;
+    padding: 2rem 0;
 
     .container {
         max-width: 800px;
@@ -148,7 +158,7 @@ header {
             img {
                 width: 200px;
                 border-radius: 50%;
-                margin: 4rem 0 1rem;
+                margin: 2rem 0 1rem;
             }
 
             h3 {

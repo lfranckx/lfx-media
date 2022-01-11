@@ -10,7 +10,7 @@ export default function Navbar(props) {
                     <h1><img src='/images/green-logo.png' alt='lfx media logo'/></h1>
                 </Link>
 
-                <Link className="btn" to="/contact">Get a quote</Link>
+                <Link className="btn" to="/contact">Say Hello</Link>
             </nav>
         </div>
     );

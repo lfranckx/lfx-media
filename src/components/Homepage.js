@@ -30,7 +30,7 @@ export default function Homepage(props) {
                                 <i className="fas fa-pencil-alt"></i>
                                 <h2>Design</h2>
                                 <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
-                                <button>Learn More</button>
+                                {/* <button>Learn More</button> */}
                             </div>
                         </li>
                         <li>
@@ -38,7 +38,7 @@ export default function Homepage(props) {
                                 <i className="fas fa-laptop-code"></i>
                                 <h2>Development</h2>
                                 <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
-                                <button>Learn More</button>
+                                {/* <button>Learn More</button> */}
                             </div>
                         </li>
                         <li>
@@ -46,7 +46,7 @@ export default function Homepage(props) {
                                 <i className="fas fa-search-dollar"></i>
                                 <h2>SEO</h2>
                                 <p>Search Engine Optimization is the practice of improving and promoting a website in order to increase the number of visitors through search engines such as Google.</p>
-                                <button>Learn More</button>
+                                {/* <button>Learn More</button> */}
                             </div>
                         </li>
                     </ul>
@@ -61,7 +61,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/leysa.png' alt='Leysa' width='300px' />
+                                    <img src='images/leysa.png' alt='Leysa' />
                                 </div>
                             </a>
                         </li>
@@ -70,7 +70,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/SAH.png' alt='Social Arthouse' width='250px' />
+                                    <img src='images/SAH.png' alt='Social Arthouse' />
                                 </div>
                             </a>
                         </li>
@@ -79,7 +79,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/ouidad.png' alt='Ouidad' width='300px' />
+                                    <img src='images/ouidad.png' alt='Ouidad' />
                                 </div>
                             </a>
                         </li>
@@ -88,7 +88,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/THE.png' alt='Textured Hair Elevated' width='300px' />
+                                    <img src='images/THE.png' alt='Textured Hair Elevated' />
                                 </div>
                             </a>
                         </li>
@@ -97,7 +97,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/omg.png' alt='OMG Artistry' width='400px' />
+                                    <img src='images/omg.png' alt='OMG Artistry' />
                                 </div>
                             </a>
                         </li>
@@ -106,7 +106,7 @@ export default function Homepage(props) {
                                 target="_blank" 
                                 rel="noopener noreferrer" >
                                 <div className='image-wrap'>
-                                    <img src='images/Michelle-text.png' alt='Michelle O Connor' width='300px' />
+                                    <img src='images/Michelle-text.png' alt='Michelle O Connor' />
                                 </div>
                             </a>
                         </li>
@@ -122,7 +122,7 @@ export default function Homepage(props) {
                             <img src='images/justine.jpg' alt='headshot' />
                             <h3>Justine Berger</h3>
                             <h4>COO, Social Arthouse</h4>
-                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor semper venenatis imperdiet, augue nisi feugiat augue, dapibus ultricies felis magna vestibulum felis.”</p>
+                            <p>“Lachlan’s is the Social Art House go-to Web Developer for all projects. He’s fast, thorough, and able to manage the complexity of any request. Thanks to his dynamic design implementation, user experience, and SEO programs, our brand website and clients are top-performing, engaging, and responsive. I would recommend working with Lachlan to anyone!”</p>
                         </div>
                     </div>
                 </section>
