@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import '../styles/Homepage.scss';
 
 export default function Homepage(props) {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     return (
         <div id="homepage">

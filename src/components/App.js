@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import Homepage from './Homepage';
 import Contact from './Contact'
 import Footer from './Footer';
+import ThankYou from './ThankYou';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/thankyou' component={ThankYou} />
         </Switch>
         <Footer />
       </div>
