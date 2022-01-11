@@ -8,6 +8,7 @@ import Homepage from './Homepage';
 import Contact from './Contact'
 import Footer from './Footer';
 import ThankYou from './ThankYou';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/thankyou' component={ThankYou} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </div>
@@ -30,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

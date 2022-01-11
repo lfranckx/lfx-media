@@ -13,10 +13,26 @@ header {
         font-weight: 400;
     }
 
-    img {
+    .image-wrap {
         margin-top: 6rem;
+        width: 100%;
+    }
+
+    img {
         margin-bottom: -4.2px;
-        width: 800px;
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 750px) {
+    header {
+        padding: 8rem .5rem 0;
+
+        h1 { font-size: 32px; }
+
+        img {
+            max-width: 90%;
+        }
     }
 }
 
@@ -41,8 +57,8 @@ header {
 
     ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
 
         li {
             .card {
@@ -88,9 +104,8 @@ header {
         max-width: 1200px;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
 
         .card {
             height: 320px;
@@ -184,7 +199,7 @@ header {
     align-items: center;
     justify-content: space-around;
     background: #141C3A;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0;
     border-radius: 15px;

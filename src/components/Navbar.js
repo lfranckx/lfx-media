@@ -1,8 +1,12 @@
 import React from 'react';
 import '../styles/Navbar.scss';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function Navbar(props) {
+    const location = useLocation();
+    console.log('location', location);
+
     return (
         <div id={props.id} className='nav'>
             <nav>
