@@ -34,11 +34,6 @@
             position: relative;
             overflow: hidden;
 
-            @media (max-width: 660px) {
-                max-width: 300px;
-                margin: auto;
-            }
-
             img {
                 width: 250px; 
                 transition: .45s ease-in-out;
@@ -73,8 +68,6 @@
                     }
                 }
 
-
-
                 .btn-wrap {
                     max-width: 250px;
                     margin: auto;
@@ -83,6 +76,17 @@
                         color: #fff;
                         font-size: 18px;
                     }
+                }
+            }
+
+            @media (max-width: 750px) {
+                .content-wrap {
+                    max-width: 320px;
+                    margin: auto;
+                }
+
+                img {
+                    max-width: 200px;
                 }
             }
 

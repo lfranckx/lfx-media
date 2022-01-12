@@ -30,9 +30,9 @@
                     background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
                 }
 
-                @media (max-width: 660px) {
+                @media (max-width: 750px) {
                     min-height: 0;
-                    max-width: 300px;
+                    max-width: 320px;
                     margin: auto;
 
                     i {
@@ -41,5 +41,13 @@
                 }
             }
         }
+    }
+
+    @media (max-width: 750px) {
+        margin-top: -8rem;
+    }
+
+    @media (max-width: 400px) {
+        margin-top: -6rem;
     }
 }
