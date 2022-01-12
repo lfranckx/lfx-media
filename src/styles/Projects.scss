@@ -34,6 +34,11 @@
             position: relative;
             overflow: hidden;
 
+            @media (max-width: 660px) {
+                max-width: 300px;
+                margin: auto;
+            }
+
             img {
                 width: 250px; 
                 transition: .45s ease-in-out;
