@@ -26,7 +26,7 @@ header {
 
 @media(max-width: 750px) {
     header {
-        padding: 4rem 2rem 0;
+        padding: 2rem 0;
 
         h1 { font-size: 28px; }
 
@@ -44,10 +44,6 @@ header {
     padding: 50px 10px 10px;
     background: #1ba49c;
     height: 400px;
-
-    // @media(max-width: 750px) {
-    //     height: 450px;
-    // }
 
     .container {
         max-width: 900px;
