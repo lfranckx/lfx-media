@@ -15,7 +15,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Leysa Carrillo is a nationally recognized industry leader for her hair color transformations on textured hair. She is the founder of Foreveer Curls Academy where she provides education for hair stylists around the world.</p>
+                                <p>Leysa Carrillo is a nationally recognized industry leader for her hair color transformations on textured hair. She is the founder of Forever Curls Academy where she provides education for hair stylists around the world.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a href='https://forevercurlsbyleysa.com/'
