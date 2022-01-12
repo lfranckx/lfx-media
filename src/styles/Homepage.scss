@@ -26,9 +26,9 @@ header {
 
 @media(max-width: 750px) {
     header {
-        padding: 8rem 2rem 0;
+        padding: 4rem 2rem 0;
 
-        h1 { font-size: 32px; }
+        h1 { font-size: 28px; }
 
         h2 {
             font-size: 18px;
@@ -37,14 +37,6 @@ header {
         img {
             max-width: 90%;
         }
-    }
-}
-
-@media(max-width: 660px) {
-    header {
-        padding: 4rem 2rem 0;
-
-        h1 { font-size: 28px; }
     }
 }
 
