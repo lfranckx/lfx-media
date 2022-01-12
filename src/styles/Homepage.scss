@@ -53,6 +53,10 @@ header {
     h2, h3 {
         color: #fff;
     }
+
+    @media (max-width: 660px) {
+        height: 440px;
+    }
 }
 
 #testimonials {
