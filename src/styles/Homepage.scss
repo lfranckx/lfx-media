@@ -106,10 +106,6 @@ header {
         border-radius: 15px;
         position: relative;
         top: 5rem;
-
-        @media (max-width: 750px) {
-            flex-direction: column;
-        }
     
         h3 {
             font-size: 32px;
@@ -119,6 +115,10 @@ header {
     
         p, .btn {
             color: #fff;
+        }
+    
+        .btn:hover {
+            background: #1ba49c;
         }
 
         @media (max-width: 1000px) {
@@ -130,9 +130,10 @@ header {
                 font-size: 16px;
             }
         }
-    
-        .btn:hover {
-            background: #1ba49c;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            margin-top: -2rem;
         }
     }
 }
