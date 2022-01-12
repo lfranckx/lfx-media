@@ -36,6 +36,12 @@ header {
     }
 }
 
+@media(max-width: 500px) {
+    header {
+        padding: 4rem 2rem 0;
+    }
+}
+
 #about {
     padding: 50px 10px 10px;
     background: #1ba49c;
