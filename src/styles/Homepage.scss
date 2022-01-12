@@ -45,6 +45,10 @@ header {
     background: #1ba49c;
     height: 400px;
 
+    @media(max-width: 750px) {
+        height: 450px;
+    }
+
     .container {
         max-width: 900px;
         margin: auto;
