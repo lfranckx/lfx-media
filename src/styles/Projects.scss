@@ -79,17 +79,6 @@
                 }
             }
 
-            @media (max-width: 750px) {
-                .content-wrap {
-                    max-width: 320px;
-                    margin: auto;
-                }
-
-                img {
-                    max-width: 200px;
-                }
-            }
-
             &:hover img {
                 opacity: 0;
             }
@@ -133,6 +122,17 @@
                 background-size: cover;
 
                 img { max-width: 320px; }
+            }
+
+            @media (max-width: 750px) {
+                .content-wrap {
+                    max-width: 320px;
+                    margin: auto;
+                }
+
+                img {
+                    max-width: 200px;
+                }
             }
         }
     }

@@ -12,7 +12,6 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
 
-
         li {
             .card {
                 min-height: 320px;
@@ -37,7 +36,6 @@
 
                 @media (max-width: 750px) {
                     min-height: 0;
-                    max-width: 320px;
                     margin: auto;
 
                     i {
