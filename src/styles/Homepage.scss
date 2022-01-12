@@ -30,6 +30,10 @@ header {
 
         h1 { font-size: 32px; }
 
+        h2 {
+            font-size: 18px;
+        }
+
         img {
             max-width: 90%;
         }
@@ -39,6 +43,8 @@ header {
 @media(max-width: 500px) {
     header {
         padding: 4rem 2rem 0;
+
+        h1 { font-size: 28px; }
     }
 }
 
