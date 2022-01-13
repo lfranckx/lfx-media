@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Projects.scss'
+import '../styles/Projects.scss';
+
+import leysa from '../images/leysa.png';
+import sah from '../images/SAH.png';
+import ouidad from '../images/ouidad.png';
+import the from '../images/THE.png';
+import omg from '../images/omg.png';
+import michelle from '../images/Michelle-text.png';
 
 export default function Projects() {
     return (
@@ -11,7 +18,7 @@ export default function Projects() {
                 <ul>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/leysa.png' alt='Leysa' />
+                            <img src={leysa} alt='Leysa' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
@@ -30,7 +37,7 @@ export default function Projects() {
                     </li>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/SAH.png' alt='Social Arthouse' />
+                            <img src={sah} alt='Social Arthouse' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
@@ -48,7 +55,7 @@ export default function Projects() {
                     </li>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/ouidad.png' alt='Ouidad' />
+                            <img src={ouidad} alt='Ouidad' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
@@ -66,7 +73,7 @@ export default function Projects() {
                     </li>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/THE.png' alt='Textured Hair Elevated' />
+                            <img src={the} alt='Textured Hair Elevated' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
@@ -85,7 +92,7 @@ export default function Projects() {
                     </li>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/omg.png' alt='OMG Artistry' />
+                            <img src={omg} alt='OMG Artistry' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
@@ -103,7 +110,7 @@ export default function Projects() {
                     </li>
                     <li className='card'>
                         <div className='image-wrap'>
-                            <img src='images/Michelle-text.png' alt='Michelle O Connor' />
+                            <img src={michelle} alt='Michelle O Connor' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useHistory } from 'react-router';
 
 import '../styles/Contact.scss';
+import me from '../images/me.png';
 
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
@@ -34,7 +35,7 @@ const Contact = () => {
             <main>
                 <section id='contact'>
                     <div>
-                        <img src='images/me.png' alt='Myself and the pups' width='250px'/>
+                        <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
                     <h1><span>Thanks for taking the time to reach out.</span><span>How can I help you today?</span></h1>

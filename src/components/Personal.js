@@ -1,4 +1,5 @@
 import React from 'react';
+import travelog from '../images/Travelog.png';
 
 export default function Personal() {
     return (
@@ -17,7 +18,7 @@ export default function Personal() {
                         rel="noopener noreferrer" >
                         <div className="wrap">
                             <div className="image-wrap">
-                                <img src='images/Travelog.png' alt="Travelog"/>
+                                <img src={travelog} alt="Travelog"/>
                             </div>
                             <div className="text-wrap">
                                 <h3>Travelog</h3>
