@@ -55,7 +55,12 @@ header {
     }
 
     @media (max-width: 660px) {
-        height: 440px;
+        height: 500px;
+
+        h2 { 
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 }
 
