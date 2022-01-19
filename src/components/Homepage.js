@@ -27,7 +27,7 @@ export default function Homepage(props) {
                 <main>
                     <section id='about'>
                         <div className='container'>
-                            <h2>Hi, my name is Lachlan.</h2>
+                            <h2>Hi, I'm Lachlan. Nice to meet you.</h2>
                             <h3>I have been very fortunate to pursue my dream as a freelance web developer.  My experience has allowed me to collaborate with some of the leading educators, influencers, and companies in the hair and beauty industry. I am quietly confident, naturally curious, and perpetually growing my love and skill for my profession.</h3>
                         </div>
                     </section>
