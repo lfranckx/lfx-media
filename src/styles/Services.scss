@@ -12,14 +12,19 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
 
-        li {
+        li {            
             .card {
-                min-height: 320px;
                 background-color: #fff;
                 box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
                 border-radius: 30px;
                 padding: 20px 10px;
-                min-height: 400px;
+
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                min-height: 100%; // keeps heights the same height as tallest el.
 
                 p {
                     padding-left: 5px;
@@ -27,10 +32,13 @@
                 }
         
                 i {
-                    font-size: 42px;
+                    font-size: 36px;
                     color: #06BC9B;
                 }
         
+                .btn-wrap {
+                    margin-top: auto;
+                }
                 button {
                     font-size: 20px;
                     padding: 10px 20px;
