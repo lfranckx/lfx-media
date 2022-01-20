@@ -1,5 +1,6 @@
 import React from 'react';
 import justine from '../images/justine.jpg';
+import '../styles/Testimonials.scss';
 
 export default function Testimonials () {
     return (

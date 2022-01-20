@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import '../styles/ThankYou.scss';
+import '../../styles/ThankYou.scss';
 
 export default function ThankYou() {
     return (

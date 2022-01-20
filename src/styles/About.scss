@@ -1,0 +1,24 @@
+
+#about {
+    padding: 50px 10px 10px;
+    background: #1ba49c;
+    height: 400px;
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2, h3 {
+        color: #fff;
+    }
+
+    @media (max-width: 660px) {
+        height: 500px;
+
+        h2 { 
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+#testimonials {
+    padding: 0 2rem;
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+
+        .card {
+            img {
+                width: 200px;
+                border-radius: 50%;
+                margin: 2rem 0 1rem;
+            }
+
+            h3 {
+                padding-bottom: 10px;
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            h4 {
+                padding-bottom: 20px;
+                font-weight: 400;
+            }
+
+            p {
+                font-weight: 500;
+                padding: 0;
+            }
+        }
+    }
+}

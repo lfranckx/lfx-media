@@ -1,11 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Homepage.scss';
 
+import About from './About';
 import Projects from './Projects';
 import Services from './Services';
 import Testimonials from './Testimonials';
+import ContactBar from './ContactBar';
 
 import computer from '../images/computer.png'
 
@@ -25,27 +26,11 @@ export default function Homepage(props) {
                     </div>
                 </header>
                 <main>
-                    <section id='about'>
-                        <div className='container'>
-                            <h2>Hi, I'm Lachlan. Nice to meet you.</h2>
-                            <h3>I have been very fortunate to pursue my dream as a freelance web developer.  My experience has allowed me to collaborate with some of the leading educators, influencers, and companies in the hair and beauty industry. I am quietly confident, naturally curious, and perpetually growing my love and skill for my profession.</h3>
-                        </div>
-                    </section>
-
+                    <About />
                     <Services />
                     <Projects />
                     <Testimonials />
-
-                    <section id='contact'>
-                        <div className='content-wrap'>
-                            <h3>Start a Project</h3>
-                            <p>
-                                Interested in working with me?<br/>
-                                Send me a message.
-                            </p>
-                            <Link className='btn' to='/contact'>Get Started</Link>
-                        </div>
-                    </section>
+                    <ContactBar />
                 </main>
             </div>
         </>

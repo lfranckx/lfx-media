@@ -5,10 +5,11 @@ import { Helmet } from 'react-helmet';
 
 import Navbar from './Navbar';
 import Homepage from './Homepage';
-import Contact from './Contact'
+import Contact from './pages/Contact';
+
 import Footer from './Footer';
-import ThankYou from './ThankYou';
-import NotFound from './NotFound';
+import ThankYou from './pages/ThankYou';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (

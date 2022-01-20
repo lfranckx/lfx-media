@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Services.scss';
 
 export default function Services() {
+
     return (
         <>
             <section id='services'>
@@ -12,7 +12,7 @@ export default function Services() {
                             <i className="fas fa-pencil-alt"></i>
                             <h2>Design</h2>
                             <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
-                            {/* <button>Learn More</button> */}
+                            <button>Learn More</button>
                         </div>
                     </li>
                     <li>
@@ -20,7 +20,7 @@ export default function Services() {
                             <i className="fas fa-laptop-code"></i>
                             <h2>Development</h2>
                             <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
-                            {/* <button>Learn More</button> */}
+                            <button>Learn More</button>
                         </div>
                     </li>
                     <li>
@@ -28,7 +28,7 @@ export default function Services() {
                             <i className="fas fa-search-dollar"></i>
                             <h2>SEO</h2>
                             <p>Search Engine Optimization is the practice of improving and promoting a website in order to increase the number of visitors through search engines such as Google.</p>
-                            {/* <button>Learn More</button> */}
+                            <button>Learn More</button>
                         </div>
                     </li>
                 </ul>

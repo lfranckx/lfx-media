@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import '../styles/NotFound.scss';
+import '../../styles/NotFound.scss';
 
 export default function NotFound () {
     useEffect(() => {

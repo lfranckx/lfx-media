@@ -2,8 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useHistory } from 'react-router';
 
-import '../styles/Contact.scss';
-import me from '../images/me.png';
+import '../../styles/Contact.scss';
+import me from '../../images/me.png';
 
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
