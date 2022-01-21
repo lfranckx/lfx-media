@@ -1,0 +1,43 @@
+#services-popup {
+    .content {
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+
+        h2 {
+            padding-top: 0;
+        }
+
+        h3 {
+            font-weight: 600;
+            color: #0d4e4a;
+        }
+
+        .btn-wrap {
+            button {
+                font-size: 20px;
+                padding: 10px 20px;
+                color: #fff;
+                border-radius: 4px;
+                background-color: #06BC9B;
+                background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+    
+                &:hover {
+                    background-color: #06BC9B;
+                    background-image: -webkit-linear-gradient(left,#1ba49c,#06BC9B);
+                    
+                    i {
+                        color: #0d4e4a;
+                    }
+                }
+    
+                i {
+                    font-size: 18px;
+                    color: #fff;
+                    margin-left: 10px;
+                    transition: none;
+                }
+            }
+        }
+    }
+}

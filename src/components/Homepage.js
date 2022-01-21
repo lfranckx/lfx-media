@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import '../styles/Homepage.scss';
 
 import About from './About';
@@ -11,9 +11,9 @@ import ContactBar from './ContactBar';
 import computer from '../images/computer.png'
 
 export default function Homepage(props) {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
     
     return (
         <>
