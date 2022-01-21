@@ -5,12 +5,20 @@
     height: 400px;
 
     .container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
     }
 
     h2, h3 {
         color: #fff;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-family: 'Europa', sans-serif;
     }
 
     @media (max-width: 660px) {

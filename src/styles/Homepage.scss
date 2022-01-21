@@ -1,16 +1,19 @@
 header {
     margin: auto;
     padding: 10rem 2rem 0;
+    max-width: 1400px;
 
     h1 {
-        font-size: 36px;
-        font-weight: 800;
+        font-size: 48px;
         margin-bottom: 2rem;
     }
 
     h2 {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 24px;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Europa', sans-serif;
+        font-weight: 300;
+        line-height: 1.5;
     }
 
     .image-wrap {
