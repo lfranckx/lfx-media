@@ -19,8 +19,7 @@
 }
 
 * {
-  // font-family: 'Montserrat', sans-serif;
-  font-family: 'Europa', sans-serif;
+  font-family: 'Europa', 'Montserrat', sans-serif;
   box-sizing: border-box;
   transition: all .2s ease-in-out;
 }
@@ -45,8 +44,7 @@ h1, h2, h3, h4, h5, ul, p, a {
 }
 
 h1, h2, h3 {
-  // font-family: 'Montserrat', sans-serif;
-  font-family: 'Eurostile-Bold';
+  font-family: 'Eurostile-Bold', 'Montserrat', sans-serif;
 }
 
 h2 {
