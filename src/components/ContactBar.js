@@ -5,7 +5,7 @@ import '../styles/ContactBar.scss';
 export default function ContactBar() {
     return (
         <>
-            <section id='contact'>
+            <section id='contact-bar'>
                 <div className='content-wrap'>
                     <h3>Start a Project</h3>
                     <p>

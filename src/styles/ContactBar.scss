@@ -1,10 +1,7 @@
-#contact {
+#contact-bar {
     width: 100%;
 
     .content-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         background: #141C3A;
         max-width: 1200px;
         margin: 0 auto;
@@ -12,11 +9,19 @@
         border-radius: 15px;
         position: relative;
         top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     
         h3 {
             font-size: 32px;
             font-weight: 700;
             color: #fff;
+            padding: 0;
+        }
+
+        p {
+            padding: 0;
         }
     
         p, .btn {
