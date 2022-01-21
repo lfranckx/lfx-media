@@ -1,5 +1,21 @@
+@font-face {
+  font-family: 'Eurostile';
+  src: url('../fonts/EuroStyle\ Normal.ttf');
+}
+
+@font-face {
+  font-family: 'Eurostile-Bold';
+  src: url('../fonts/EurostileBold.ttf');
+}
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa\ Regular.woff');
+}
+
 * {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Europa', sans-serif;
   box-sizing: border-box;
   transition: all .2s ease-in-out;
 }
@@ -24,7 +40,7 @@ h1, h2, h3, h4, h5, ul, p, a {
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Eurostile-bold', sans-serif;
 }
 
 h2 {
