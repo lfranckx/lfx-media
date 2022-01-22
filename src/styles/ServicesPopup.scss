@@ -10,8 +10,9 @@
         border-radius: 30px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
         background: #0d4e4a;
-        overflow-y: auto !important;
+        overflow-y: auto;
         overflow-x: hidden;
+        max-height: 860px;
         
         position: -webkit-sticky;
         position: sticky;
