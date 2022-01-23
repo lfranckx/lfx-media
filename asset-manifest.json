@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.7ab81c3e.chunk.css",
+    "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.8e6be2b2.chunk.css",
     "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.8f051b1a.chunk.js",
     "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.8f051b1a.chunk.js.map",
     "runtime-main.js": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js",
@@ -8,7 +8,7 @@
     "static/js/2.9b45eb49.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js",
     "static/js/2.9b45eb49.chunk.js.map": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js.map",
     "index.html": "https://lfranckx.github.io/lfx-media/index.html",
-    "static/css/main.7ab81c3e.chunk.css.map": "https://lfranckx.github.io/lfx-media/static/css/main.7ab81c3e.chunk.css.map",
+    "static/css/main.8e6be2b2.chunk.css.map": "https://lfranckx.github.io/lfx-media/static/css/main.8e6be2b2.chunk.css.map",
     "static/js/2.9b45eb49.chunk.js.LICENSE.txt": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js.LICENSE.txt",
     "static/media/App.scss": "https://lfranckx.github.io/lfx-media/static/media/EurostileLv.01842aaf.woff",
     "static/media/Michelle-text.f3fb3f43.png": "https://lfranckx.github.io/lfx-media/static/media/Michelle-text.f3fb3f43.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ed67bc7.js",
     "static/js/2.9b45eb49.chunk.js",
-    "static/css/main.7ab81c3e.chunk.css",
+    "static/css/main.8e6be2b2.chunk.css",
     "static/js/main.8f051b1a.chunk.js"
   ]
 }
