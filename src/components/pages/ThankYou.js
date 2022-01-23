@@ -8,7 +8,7 @@ export default function ThankYou() {
             <Helmet >
                 <title>Thank You</title>
                 <meta name='description' content='Thank you for contacting me. I will be in touch shortly.'/>
-                <meta name='keywords' content='Web Developer, Web Designer, and SEO Manager' />
+                <meta name='keywords' content='Front-end Developer, Full-stack Engineer, Web Designer, SEO Manager, Mentor' />
             </Helmet>
 
             <main id='thankyou'>

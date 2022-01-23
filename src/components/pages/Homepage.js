@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
-import '../styles/Homepage.scss';
+import '../../styles/Homepage.scss';
 
-import About from './About';
-import Projects from './Projects';
-import Services from './Services';
-import Testimonials from './Testimonials';
-import ContactBar from './ContactBar';
+import About from '../About';
+import Projects from '../Projects';
+import Services from '../Services';
+import Testimonials from '../Testimonials';
+import ContactBar from '../ContactBar';
 
-import computer from '../images/computer.png'
+import computer from '../../images/computer.png'
 
 export default function Homepage(props) {
     useEffect(() => {

@@ -4,9 +4,8 @@ import { withRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import Navbar from './Navbar';
-import Homepage from './Homepage';
+import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';
-
 import Footer from './Footer';
 import ThankYou from './pages/ThankYou';
 import NotFound from './pages/NotFound';
@@ -17,7 +16,7 @@ function App() {
       <Helmet >
         <title>LFX Media | Front-end Developer, Full-stack Engineer, SEO Manager</title>
         <meta name='description' content='I build beautiful and effective online stores that help businesses succeed.'/>
-        <meta name='keywords' content='Front End Developer, Full Stack Engineer &amp; SEO Manager' />
+        <meta name='keywords' content='Front-end Developer, Full-stack Engineer, Web Designer, SEO Manager, Mentor' />
       </Helmet>
       <div className='app'>
         <Navbar />

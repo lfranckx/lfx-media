@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/ServicesPopup.scss';
 
 export default function ServicesPopup(props) {
@@ -80,9 +81,12 @@ export default function ServicesPopup(props) {
                             <p>Stay above local competitors</p>
                             <p>Improved user experience</p>
                         </div>
-                        {/* <div className='btn-wrap'>
-                            <button>See my results <i className="fas fa-chevron-circle-right"></i></button>
-                        </div> */}
+                        <div className='wrap'>
+                            <h3>Want to see the numbers?</h3>
+                        </div>
+                        <div className='btn-wrap'>
+                            <Link className='btn' to='/'>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                        </div>
                         <button 
                             className='btn'
                             onClick={() => {toggleSeoCard(!seoCardOpen)}}
