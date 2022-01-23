@@ -28,9 +28,8 @@ const Contact = () => {
     return (
         <>
             <Helmet >
-                <title>Contact LFX Media</title>
-                <meta name='description' content='Get in touch with Lachlan Franckx about a website'/>
-                <meta name='keywords' content='Web Developer, Web Designer, and SEO Manager' />
+                <title>Contact Lachlan Franckx</title>
+                <meta name='description' content='Get in touch with Lachlan Franckx about his services.'/>
             </Helmet>
             <main>
                 <section id='contact'>

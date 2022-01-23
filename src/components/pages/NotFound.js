@@ -14,8 +14,7 @@ export default function NotFound () {
         <>
             <Helmet >
                 <title>404 Not Found</title>
-                <meta name='description' content='404 Page Not Found'/>
-                <meta name='keywords' content='Web Developer, Web Designer, and SEO Manager' />
+                <meta name='description' content='404, Page Not Found'/>
             </Helmet>
             <main id='notfound'>
                     <h1><span>404</span>Sorry, this page does not exist.</h1>

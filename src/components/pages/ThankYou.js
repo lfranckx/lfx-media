@@ -6,9 +6,8 @@ export default function ThankYou() {
     return (
         <>
             <Helmet >
-                <title>Thank You</title>
+                <title>Thank You | LFX Media</title>
                 <meta name='description' content='Thank you for contacting me. I will be in touch shortly.'/>
-                <meta name='keywords' content='Front-end Developer, Full-stack Engineer, Web Designer, SEO Manager, Mentor' />
             </Helmet>
 
             <main id='thankyou'>

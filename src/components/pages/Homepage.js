@@ -19,7 +19,7 @@ export default function Homepage(props) {
         <>
             <div id="homepage">
                 <header>
-                    <h1>Front-end Developer, Full-stack Engineer &amp; SEO Manager</h1>
+                    <h1>Web Developer, Full-stack Engineer &amp; SEO Manager</h1>
                     <h2>I build beautiful and effective online stores that help businesses succeed.</h2>
                     <div className='image-wrap'>
                         <img src={computer} alt='desktop workspace' />

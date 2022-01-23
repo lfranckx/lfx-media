@@ -42,10 +42,16 @@
                     font-size: 36px;
                     color: #06BC9B;
                 }
+
+                .icon {
+                    height: 36px;
+                    margin: 0 auto;
+                }
         
                 .btn-wrap {
                     margin-top: auto;
                 }
+
                 button {
                     font-size: 20px;
                     padding: 10px 20px;
@@ -77,6 +83,10 @@
 
                     i {
                         font-size: 28px;
+                    }
+
+                    .icon {
+                        height: 28px;
                     }
                 }
 

@@ -9,20 +9,22 @@ import Contact from './pages/Contact';
 import Footer from './Footer';
 import ThankYou from './pages/ThankYou';
 import NotFound from './pages/NotFound';
+import Results from './pages/Results';
 
 function App() {
   return (
     <>
       <Helmet >
-        <title>LFX Media | Front-end Developer, Full-stack Engineer, SEO Manager</title>
-        <meta name='description' content='I build beautiful and effective online stores that help businesses succeed.'/>
-        <meta name='keywords' content='Front-end Developer, Full-stack Engineer, Web Designer, SEO Manager, Mentor' />
+        <title>LFX Media | Web Developer, Full-stack Engineer, &amp; SEO Manager</title>
+        <meta name='description' content='Lachlan Franckx | Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager | I build beautiful and effective websites and online stores that help businesses succeed.'/>
+        <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager' />
       </Helmet>
       <div className='app'>
         <Navbar />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path="/results" component={Results} />
           <Route exact path='/thankyou' component={ThankYou} />
           <Route component={NotFound} />
         </Switch>

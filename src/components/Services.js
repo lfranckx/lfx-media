@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Services.scss';
 import ServicesPopup from './ServicesPopup';
+import design from '../images/design.png'
+import code from '../images/code.png';
 
 export default function Services() {
 
@@ -14,7 +16,7 @@ export default function Services() {
                 <ul>
                     <li>
                         <div className='card'>
-                            <i className="fas fa-pencil-alt"></i>
+                            <img src={design} className='icon' alt='pen and pencil'/>
                             <h2>Design</h2>
                             <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
 
@@ -25,7 +27,7 @@ export default function Services() {
                     </li>
                     <li>
                         <div className='card'>
-                            <i className="fas fa-laptop-code"></i>
+                            <img src={code} className='icon' alt='code'/>
                             <h2>Development</h2>
                             <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
                             <div className='btn-wrap'>
