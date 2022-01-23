@@ -38,7 +38,7 @@ const Contact = () => {
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
-                    <h1><span>Thanks for taking the time to reach out.</span><span>How can I help you today?</span></h1>
+                    <h1><span>Thanks for taking the time to reach out. </span><span>How can I help you today?</span></h1>
 
                     <form onSubmit={sendEmail}>
                         <div className='flex'>

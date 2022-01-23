@@ -12,6 +12,10 @@
         @media (max-width: 900px) {
             font-size: 28px;
         }
+
+        @media (max-width: 600px) {
+            span { display: inline; }
+        }
     }
     img {
         border-radius: 50%;
