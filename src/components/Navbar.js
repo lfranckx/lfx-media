@@ -6,7 +6,6 @@ import green from '../images/green-logo.png';
 
 export default function Navbar(props) {
     const location = useLocation();
-    console.log(location.pathname);
 
     return (
         <div id={props.id} className='nav'>
