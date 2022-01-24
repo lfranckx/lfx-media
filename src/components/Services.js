@@ -16,7 +16,6 @@ export default function Services() {
                 <ul>
                     <li>
                         <div className='card'>
-                            {/* <img src={design} className='icon' alt='pen and pencil'/> */}
                             <i className="fas fa-drafting-compass"></i>
                             <h2>Design</h2>
                             <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
@@ -28,7 +27,6 @@ export default function Services() {
                     </li>
                     <li>
                         <div className='card'>
-                            {/* <img src={code} className='icon' alt='code'/> */}
                             <i className="fas fa-laptop-code"></i>
                             <h2>Development</h2>
                             <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>

@@ -11,7 +11,7 @@ export default function ServicesPopup(props) {
                     <div className={designCardOpen ? 'content' : 'hide'}>
                         <div className='wrap'>
                             <h2>Web Design &mdash; Creating the look &amp; feel of your website</h2>
-                            <p>I value simple content structure, clean design patterns, and thoughtful interactions. The audience should have an enjoyable, positive experience when using your website. Whether their objective is to read some content, browse items your selling, or watching a video, every moment should be clear and easy for the user to understand.</p>
+                            <p>I value simple content structure, clean design patterns, and thoughtful interactions. The audience should have an enjoyable, positive experience when using your website. Whether their objective is to read some content, browse items your selling, or watching a video, every moment should be clear and easy to use.</p>
                         </div>
                         <div className='wrap'>
                             <h3>Things I enjoy designing:</h3>
@@ -35,7 +35,7 @@ export default function ServicesPopup(props) {
                     <div className={developmentCardOpen ? 'content' : 'hide'}>
                         <div className='wrap'>
                             <h2>Web Development</h2>
-                            <p>I like to code things from scratch and enjoy bringing ideas to life in the browser. I specialize in a wide array of technologies used for building full-stack web applications. Need someone to help with your eCommerce store as well? I got you covered. I also provide full Shopify theme development to create custom themes that suit your needs. My experience as a full-stack engineer also includes crafting web applications that can integrate into your online store to enhance your eCommerce capabilities.</p>
+                            <p>I like to code things from scratch and enjoy bringing ideas to life in the browser. I specialize in a wide array of technologies used for building full-stack web applications. I also provide full Shopify theme development to create custom themes that suit your needs. My experience as a full-stack engineer also includes crafting web applications that can integrate into your online store to enhance your eCommerce capabilities.</p>
                         </div>
                         <div className='wrap'>
                             <h3>Languages I speak:</h3>
