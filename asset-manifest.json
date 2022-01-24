@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.c3c79502.chunk.css",
-    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.2753cefb.chunk.js",
-    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.2753cefb.chunk.js.map",
+    "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.40e5dd80.chunk.css",
+    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.a84b2779.chunk.js",
+    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.a84b2779.chunk.js.map",
     "runtime-main.js": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js",
     "runtime-main.js.map": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js.map",
-    "static/js/2.9b45eb49.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js",
-    "static/js/2.9b45eb49.chunk.js.map": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js.map",
+    "static/js/2.ede0b7ed.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.ede0b7ed.chunk.js",
+    "static/js/2.ede0b7ed.chunk.js.map": "https://lfranckx.github.io/lfx-media/static/js/2.ede0b7ed.chunk.js.map",
     "index.html": "https://lfranckx.github.io/lfx-media/index.html",
-    "static/css/main.c3c79502.chunk.css.map": "https://lfranckx.github.io/lfx-media/static/css/main.c3c79502.chunk.css.map",
-    "static/js/2.9b45eb49.chunk.js.LICENSE.txt": "https://lfranckx.github.io/lfx-media/static/js/2.9b45eb49.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "https://lfranckx.github.io/lfx-media/static/media/EurostileBold.93e49ce6.otf",
+    "static/css/main.40e5dd80.chunk.css.map": "https://lfranckx.github.io/lfx-media/static/css/main.40e5dd80.chunk.css.map",
+    "static/js/2.ede0b7ed.chunk.js.LICENSE.txt": "https://lfranckx.github.io/lfx-media/static/js/2.ede0b7ed.chunk.js.LICENSE.txt",
     "static/media/Michelle-text.f3fb3f43.png": "https://lfranckx.github.io/lfx-media/static/media/Michelle-text.f3fb3f43.png",
     "static/media/Projects.scss": "https://lfranckx.github.io/lfx-media/static/media/wave-lines.fe8bd1ec.png",
     "static/media/SAH.7bb07fcc.png": "https://lfranckx.github.io/lfx-media/static/media/SAH.7bb07fcc.png",
     "static/media/computer.46a7d378.png": "https://lfranckx.github.io/lfx-media/static/media/computer.46a7d378.png",
-    "static/media/design.f3812fee.png": "https://lfranckx.github.io/lfx-media/static/media/design.f3812fee.png",
     "static/media/justine.7bcafaa5.jpg": "https://lfranckx.github.io/lfx-media/static/media/justine.7bcafaa5.jpg",
     "static/media/me.0697af60.png": "https://lfranckx.github.io/lfx-media/static/media/me.0697af60.png",
     "static/media/omg.33dcfc5b.png": "https://lfranckx.github.io/lfx-media/static/media/omg.33dcfc5b.png",
@@ -23,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2ed67bc7.js",
-    "static/js/2.9b45eb49.chunk.js",
-    "static/css/main.c3c79502.chunk.css",
-    "static/js/main.2753cefb.chunk.js"
+    "static/js/2.ede0b7ed.chunk.js",
+    "static/css/main.40e5dd80.chunk.css",
+    "static/js/main.a84b2779.chunk.js"
   ]
 }

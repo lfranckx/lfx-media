@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Eurostile-Bold';
+    src: url('./fonts/EurostileBold.woff');
+}
+
+@font-face {
+    font-family: 'Europa';
+    src: url('./fonts/EuropaRegular.woff');
+}
