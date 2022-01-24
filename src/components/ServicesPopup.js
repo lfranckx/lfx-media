@@ -35,7 +35,7 @@ export default function ServicesPopup(props) {
                     <div className={developmentCardOpen ? 'content' : 'hide'}>
                         <div className='wrap'>
                             <h2>Web Development</h2>
-                            <p>I like to code things from scratch and enjoy bringing ideas to life in the browser. I specialize in a wide array of technologies used for building full-stack applications. I also provide full Shopify theme development to create custom themes that suit your needs. My experience as a full-stack engineer also includes crafting web applications that can integrate into your online store to enhance your eCommerce capabilities.</p>
+                            <p>I like to code things from scratch and enjoy bringing ideas to life in the browser. I specialize in a wide array of technologies used for building full-stack web applications. I also provide full Shopify theme development to create custom themes that suit your needs. My experience as a full-stack engineer also includes crafting web applications that can integrate into your online store to enhance your eCommerce capabilities.</p>
                         </div>
                         <div className='wrap'>
                             <h3>Languages I speak:</h3>
