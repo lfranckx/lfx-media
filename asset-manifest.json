@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.40e5dd80.chunk.css",
-    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.0bdc2e58.chunk.js",
-    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.0bdc2e58.chunk.js.map",
+    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.c93effc7.chunk.js",
+    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.c93effc7.chunk.js.map",
     "runtime-main.js": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js",
     "runtime-main.js.map": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js.map",
     "static/js/2.6df0c07f.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.6df0c07f.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.2ed67bc7.js",
     "static/js/2.6df0c07f.chunk.js",
     "static/css/main.40e5dd80.chunk.css",
-    "static/js/main.0bdc2e58.chunk.js"
+    "static/js/main.c93effc7.chunk.js"
   ]
 }
