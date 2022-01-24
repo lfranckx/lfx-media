@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../styles/ServicesPopup.scss';
 
 export default function ServicesPopup(props) {
