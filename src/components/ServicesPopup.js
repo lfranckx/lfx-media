@@ -6,8 +6,8 @@ export default function ServicesPopup(props) {
     const { designCardOpen, developmentCardOpen, seoCardOpen, toggleDesignCard, toggleDevelopmentCard, toggleSeoCard } = props;
 
     return (
-        <>
-            <div id={'services-popup'}>
+        <section id={'services-popup'}>
+            <div className='content-wrap'>
                     <div className={designCardOpen ? 'content' : 'hide'}>
                         <div className='wrap'>
                             <h2>Web Design &mdash; Creating the look &amp; feel of your website</h2>
@@ -81,10 +81,10 @@ export default function ServicesPopup(props) {
                             <p>Stay above local competitors</p>
                             <p>Improved user experience</p>
                         </div>
-                        {/* <div className='wrap'>
+                        <div className='wrap'>
                             <h3>Want to see the numbers?</h3>
                         </div>
-                        <div className='btn-wrap'>
+                        {/* <div className='btn-wrap'>
                             <Link className='btn' to='/results'>View my results <i className="fas fa-chevron-circle-right"></i></Link>
                         </div> */}
                         <button 
@@ -95,6 +95,6 @@ export default function ServicesPopup(props) {
                         </button>
                     </div>
                 </div>
-        </>
+        </section>
     )
 }
