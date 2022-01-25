@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "https://lfranckx.github.io/lfx-media/static/css/main.e805d15f.chunk.css",
-    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.fbb8e364.chunk.js",
-    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.fbb8e364.chunk.js.map",
+    "main.js": "https://lfranckx.github.io/lfx-media/static/js/main.89ca7b44.chunk.js",
+    "main.js.map": "https://lfranckx.github.io/lfx-media/static/js/main.89ca7b44.chunk.js.map",
     "runtime-main.js": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js",
     "runtime-main.js.map": "https://lfranckx.github.io/lfx-media/static/js/runtime-main.2ed67bc7.js.map",
-    "static/js/2.6df0c07f.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.6df0c07f.chunk.js",
-    "static/js/2.6df0c07f.chunk.js.map": "https://lfranckx.github.io/lfx-media/static/js/2.6df0c07f.chunk.js.map",
+    "static/js/2.86f6cb5c.chunk.js": "https://lfranckx.github.io/lfx-media/static/js/2.86f6cb5c.chunk.js",
+    "static/js/2.86f6cb5c.chunk.js.map": "https://lfranckx.github.io/lfx-media/static/js/2.86f6cb5c.chunk.js.map",
     "index.html": "https://lfranckx.github.io/lfx-media/index.html",
     "static/css/main.e805d15f.chunk.css.map": "https://lfranckx.github.io/lfx-media/static/css/main.e805d15f.chunk.css.map",
-    "static/js/2.6df0c07f.chunk.js.LICENSE.txt": "https://lfranckx.github.io/lfx-media/static/js/2.6df0c07f.chunk.js.LICENSE.txt",
+    "static/js/2.86f6cb5c.chunk.js.LICENSE.txt": "https://lfranckx.github.io/lfx-media/static/js/2.86f6cb5c.chunk.js.LICENSE.txt",
     "static/media/Michelle-text.f3fb3f43.png": "https://lfranckx.github.io/lfx-media/static/media/Michelle-text.f3fb3f43.png",
     "static/media/Projects.scss": "https://lfranckx.github.io/lfx-media/static/media/wave-lines.fe8bd1ec.png",
     "static/media/SAH.7bb07fcc.png": "https://lfranckx.github.io/lfx-media/static/media/SAH.7bb07fcc.png",
     "static/media/computer.46a7d378.png": "https://lfranckx.github.io/lfx-media/static/media/computer.46a7d378.png",
+    "static/media/da.f403d833.jpeg": "https://lfranckx.github.io/lfx-media/static/media/da.f403d833.jpeg",
     "static/media/justine.7bcafaa5.jpg": "https://lfranckx.github.io/lfx-media/static/media/justine.7bcafaa5.jpg",
     "static/media/me.0697af60.png": "https://lfranckx.github.io/lfx-media/static/media/me.0697af60.png",
     "static/media/omg.33dcfc5b.png": "https://lfranckx.github.io/lfx-media/static/media/omg.33dcfc5b.png",
@@ -21,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2ed67bc7.js",
-    "static/js/2.6df0c07f.chunk.js",
+    "static/js/2.86f6cb5c.chunk.js",
     "static/css/main.e805d15f.chunk.css",
-    "static/js/main.fbb8e364.chunk.js"
+    "static/js/main.89ca7b44.chunk.js"
   ]
 }
