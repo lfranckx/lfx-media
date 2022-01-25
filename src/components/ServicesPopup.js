@@ -81,9 +81,9 @@ export default function ServicesPopup(props) {
                             <p>Stay above local competitors</p>
                             <p>Improved user experience</p>
                         </div>
-                        <div className='wrap'>
+                        {/* <div className='wrap'>
                             <h3>Want to see the numbers?</h3>
-                        </div>
+                        </div> */}
                         {/* <div className='btn-wrap'>
                             <Link className='btn' to='/results'>View my results <i className="fas fa-chevron-circle-right"></i></Link>
                         </div> */}
