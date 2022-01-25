@@ -1,7 +1,7 @@
 #contact {
     max-width: 1200px;
     margin: auto;
-    padding: 2rem;
+    padding: 32px;
 
     h1 {
         font-size: 36px;
@@ -19,7 +19,7 @@
     }
     img {
         border-radius: 50%;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
     }
 
     .flex {
@@ -31,17 +31,17 @@
                 align-items: center;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-top: 2rem;
+        margin-top: 32px;
 
         @media (max-width: 1100px) {
             display: block;
             max-width: 600px;
-            margin: 2rem auto 0;
+            margin: 32px auto 0;
         }
     }
 
     .message-label {
-        margin: 2rem 0 0 0;
+        margin: 32px 0 0 0;
 
         @media (max-width: 1100px) {
             text-align: left;
@@ -74,6 +74,6 @@
     .btn { 
         color: #1ba49c;
         &:hover { color: #fff; }
-        margin-top: 1rem;
+        margin-top: 16px;
     }
 }
