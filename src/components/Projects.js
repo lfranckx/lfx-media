@@ -13,7 +13,7 @@ export default function Projects() {
         <>
             <section id='projects'>
                 <h2>Featured Work</h2>
-                <p className='h3'>Here are a few professional projects I have recently built. Want to see more? <span><a className='email' href='mailto:lfranckx@gmail.com'>Email me.</a></span></p>
+                <p className='h3'>Here are a few professional projects I have recently built. Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email me.</a></span></p>
                 <ul>
                     <li className='card'>
                         <div className='image-wrap'>
