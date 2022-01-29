@@ -29,7 +29,7 @@ const Contact = () => {
         <>
             <Helmet >
                 <title>Contact Lachlan Franckx</title>
-                <meta name='description' content='Get in touch with Lachlan Franckx about his services.'/>
+                <meta name='description' content='Get in touch with Lachlan Franckx about his web services.'/>
             </Helmet>
             <main>
                 <section id='contact'>
@@ -46,17 +46,12 @@ const Contact = () => {
                                 <div className="label">
                                     <label htmlFor="name"></label>
                                 </div>
-
                                 <div>
                                     <input
                                         type="text"
                                         name="name"
                                         placeholder='Your Name'
                                     />
-                                </div>
-
-                                <div className="label">
-                                    <label htmlFor="salon"></label>
                                 </div>
 
                                 <div className="label">
