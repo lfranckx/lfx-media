@@ -7,7 +7,6 @@ import Navbar from './Navbar';
 import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';
 import Footer from './Footer';
-import ThankYou from './pages/ThankYou';
 import NotFound from './pages/NotFound';
 import Results from './pages/Results';
 
@@ -25,7 +24,6 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path="/results" component={Results} />
-          <Route exact path='/thankyou' component={ThankYou} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
