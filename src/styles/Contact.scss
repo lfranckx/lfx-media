@@ -6,6 +6,7 @@
     h1 {
         font-size: 36px;
         font-weight: 400;
+        line-height: 1.5;
 
         span{ display: block; }
 
@@ -17,9 +18,29 @@
             span { display: inline; }
         }
     }
+
     img {
         border-radius: 50%;
         margin-bottom: 32px;
+    }
+
+    .header-wrap {
+        opacity: 0;
+        height: 0;
+        transition: all 1s ease;
+
+        span {
+            display: none;
+        }
+    }
+
+    .header-wrap.active {
+        opacity: 1;
+        height: auto;
+
+        span {
+            display: block;
+        }
     }
 
     .flex {
@@ -31,7 +52,7 @@
                 align-items: center;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-top: 32px;
+        margin-top: 20px;
 
         @media (max-width: 1100px) {
             display: block;
@@ -55,7 +76,7 @@
     input, textarea {
         font-size: 20px;
         margin: 10px 0;
-        padding: 5px 10px;
+        padding: 10px;
         width: 400px;
 
         @media(max-width: 700px) {
@@ -73,7 +94,15 @@
 
     .btn { 
         color: #1ba49c;
-        &:hover { color: #fff; }
+        &:hover, &:disabled { 
+            color: #fff; 
+        }
         margin-top: 16px;
+    }
+
+    .error {
+        text-align: left;
+        padding-left: 10px;
+        color: #1ba49c;
     }
 }

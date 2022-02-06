@@ -46,17 +46,15 @@
                     grid-gap: 20px;
                 }
         
-                p, li {
-                    color: #fff;
-                }
-    
                 p {
+                    color: #fff;
                     padding-left: 0;
                     padding-right: 0;
                 }
         
                 li {
                     font-size: 20px;
+                    color: #fff;
     
                     @media(max-width: 750px) {
                         font-size: 18px;

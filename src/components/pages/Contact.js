@@ -1,29 +1,45 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useHistory } from 'react-router';
-
+import React, { useEffect, useState } from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import * as emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet';
 import '../../styles/Contact.scss';
 import me from '../../images/me.png';
 
-import emailjs from 'emailjs-com';
-import { Helmet } from 'react-helmet';
 
 const Contact = () => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, [])
 
-    const history = useHistory();
+    const [messageSuccess, toggleMessageSuccess] = useState(false);
+    const [buttonState, handleButtonState] = useState('Submit');
+    const [buttonDisabled, handleButtonDisabled] = useState(false);
+    const [message, handleMessage] = useState('');
 
-    function sendEmail(e) {
-        e.preventDefault();
+    const submitForm = (values) => {
+        handleButtonState('Sending')
 
-        emailjs.sendForm('service_if54qk7', 'template_5f9yjza', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
+        try {
+            emailjs.send("service_if54qk7", "template_5f9yjza", values, "user_4ZnH44kohKcJmQhnL2VGX")
             .then(res => {
-                history.push('/thankyou');
-            })
-            .catch(err => console.log(err));
+                    toggleMessageSuccess(true);
+                    handleButtonState('Sent!');
+                    handleButtonDisabled(true);
+                }
+            )
+        } catch (error) {
+            handleMessage(error.message);
+        }
     }
+
+    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    const contactFormSchema = Yup.object().shape({
+        name: Yup.string().min(2, '* Name is too short').max(20, "* 20 maximum characters").required('* Required'),
+        email: Yup.string().email("* Invalid email").required("* Required"),
+        phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
+        message: Yup.string().min(2, "* Message is too short").max(120, "* 120 maximum characters").required("* Required"),
+    })
 
     return (
         <>
@@ -37,65 +53,82 @@ const Contact = () => {
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
-                    <h1><span>Thanks for taking the time to reach out. </span><span>How can I help you today?</span></h1>
+                    <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for contacting me.</span><span>You will be hearing from me very soon...</span><span className='mt10'>^_^</span></h1>
+                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. </span><span>How can I help you today?</span></h1>
 
-                    <form onSubmit={sendEmail}>
-                        <div className='flex'>
+                    <Formik 
+                        initialValues={{ name: "", email: "", phone: "", message: ""}} 
+                        validationSchema={contactFormSchema}
+                        onSubmit={submitForm}
+                    >
+                        <Form>
+                            <div className='flex'>
+                                <div className='wrap'>
+                                    <div className="label">
+                                        <label htmlFor="name"></label>
+                                    </div>
+                                    <div>
+                                        <Field
+                                            name="name"
+                                            placeholder='Your Name'
+                                        />
+                                    </div>
+                                    <div>
+                                        <ErrorMessage component="div" className='error' name='name' />
+                                    </div>
 
-                            <div className='wrap'>
-                                <div className="label">
-                                    <label htmlFor="name"></label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder='Your Name'
-                                    />
+                                    <div className="label">
+                                        <label htmlFor="email"></label>
+                                    </div>
+                                    <div>
+                                        <Field
+                                            name="email"
+                                            placeholder="Your Email"
+                                        />
+                                    </div>
+                                    <div>
+                                        <ErrorMessage component="div" className='error' name='email' />
+                                    </div>
+
+                                    <div className="label">
+                                        <label htmlFor="phone"></label>
+                                    </div>
+                                    <div>
+                                        <Field
+                                            name="phone"
+                                            placeholder='Your Phone Number'
+                                        />
+                                    </div>
+                                    <div>
+                                        <ErrorMessage component="div" className='error' name='phone' />
+                                    </div>
                                 </div>
 
-                                <div className="label">
-                                    <label htmlFor="email"></label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email"
-                                    />
-                                </div>
+                                <div className='wrap'>
+                                    <div className="message-label">
+                                        <label htmlFor="message">Message</label>
+                                    </div>
 
-                                <div className="label">
-                                    <label htmlFor="phone"></label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        placeholder='Your Phone Number'
-                                    />
+                                    <div>
+                                        <Field
+                                            name="message"
+                                            as='textarea'
+                                            rows='10'
+                                        />
+                                    </div>
+                                    <div>
+                                        <ErrorMessage component="div" className='error' name='message' />
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className='wrap'>
-                                <div className="message-label">
-                                    <label htmlFor="message">Message</label>
-                                </div>
+                            <button className="btn" type="submit" disabled={buttonDisabled}>
+                                {buttonState}
+                            </button> 
+                        </Form>  
+                    </Formik>
 
-                                <div>
-                                    <textarea 
-                                        name='message' 
-                                        rows='10' 
-                                    />
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <button className="btn" type="submit">
-                            Submit
-                        </button>                        
-                    </form>
+                    {message && <div className='message'>{message}</div>}
                 </section>
             </main>
         </>
