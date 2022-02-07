@@ -8,8 +8,6 @@ export default function Services() {
     const [developmentCardOpen, toggleDevelopmentCard] = useState(false);
     const [seoCardOpen, toggleSeoCard] = useState(false);
 
-    console.log(designCardOpen, developmentCardOpen, seoCardOpen);
-
     return (
         <>
             <section id='services'>
