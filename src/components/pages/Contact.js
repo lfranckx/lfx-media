@@ -18,10 +18,17 @@ const Contact = () => {
     const [message, handleMessage] = useState('');
 
     const submitForm = (values) => {
-        handleButtonState('Sending')
+        handleButtonState('Sending');
+        const newValues = {
+            email: values.email,
+            message: values.message,
+            name: values.name,
+            phone: values.phone,
+            reply_to: values.email
+        }
 
         try {
-            emailjs.send("service_if54qk7", "template_5f9yjza", values, "user_4ZnH44kohKcJmQhnL2VGX")
+            emailjs.send("service_if54qk7", "template_5f9yjza", newValues, "user_4ZnH44kohKcJmQhnL2VGX")
             .then(res => {
                     toggleMessageSuccess(true);
                     handleButtonState('Sent!');
