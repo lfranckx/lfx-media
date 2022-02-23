@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
 
                     <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for contacting me.</span><span>You will be hearing from me very soon...</span><span className='mt10'>^_^</span></h1>
-                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. </span><span>How can I help you today?</span></h1>
+                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. How can I help you today?</span></h1>
 
                     <Formik 
                         initialValues={{ name: "", email: "", phone: "", message: ""}} 

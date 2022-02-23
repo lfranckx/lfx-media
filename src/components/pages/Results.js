@@ -9,7 +9,7 @@ export default function Results() {
                 <meta name='description' content=''/>
             </Helmet>
             <main>
-
+                
             </main>
         </>
     )
