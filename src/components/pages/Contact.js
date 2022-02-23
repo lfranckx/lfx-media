@@ -113,7 +113,7 @@ const Contact = () => {
 
                                 <div className='wrap'>
                                     <div className="message-label">
-                                        <label htmlFor="message">Message</label>
+                                        <label htmlFor="message"></label>
                                     </div>
 
                                     <div>
@@ -121,6 +121,7 @@ const Contact = () => {
                                             name="message"
                                             as='textarea'
                                             rows='10'
+                                            placeholder='Message'
                                         />
                                     </div>
                                     <div>
