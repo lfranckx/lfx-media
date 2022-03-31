@@ -6,7 +6,7 @@ header {
     h1 {
         font-size: 48px;
         margin-top: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -14,6 +14,40 @@ header {
         font-family: 'Europa', 'Montserrat', sans-serif;
         font-weight: 300;
         line-height: 1.5;
+    }
+
+    .btn-wrap {
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        .btn {
+            border: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 4px;
+            background-color: #06BC9B;
+            background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+            cursor: pointer;
+
+            &:hover {
+                background-color: #06BC9B;
+                background-image: -webkit-linear-gradient(left,#1ba49c,#06BC9B);
+                
+                i {
+                    color: #0d4e4a;
+                }
+            }
+
+            i {
+                font-size: 18px;
+                color: #fff;
+                margin-left: 10px;
+                -webkit-transition: none;
+                -o-transition: none;
+                transition: none;
+            }
+        }
     }
 
     .image-wrap {
