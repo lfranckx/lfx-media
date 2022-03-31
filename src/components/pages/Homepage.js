@@ -21,7 +21,7 @@ export default function Homepage() {
                     <h1>Web Developer, Full-stack Engineer &amp; SEO Manager</h1>
                     <h2>I build beautiful and effective online stores that help businesses succeed.</h2>
                     <div className='btn-wrap'>
-                        <Link className='btn' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+                        <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
                             View my work <i className="fas fa-chevron-circle-right" />
                         </Link>
                     </div>

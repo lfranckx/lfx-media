@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Projects.scss';
 
 import leysa from '../images/leysa.png';
@@ -14,6 +15,9 @@ export default function Projects() {
             <section id='projects'>
                 <h2>Featured Work</h2>
                 <p className='h3'>Here are a few professional projects I have recently built. Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email me.</a></span></p>
+                <div className='btn-wrap'>
+                    <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                </div>
                 <ul>
                     <li className='card'>
                         <div className='image-wrap'>

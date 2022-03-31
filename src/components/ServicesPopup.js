@@ -85,7 +85,7 @@ export default function ServicesPopup(props) {
                         <h3>Want to see the numbers?</h3>
                     </div>
                     <div className='btn-wrap'>
-                        <Link className='btn' to='/results'>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                        <Link className='btn-secondary' to='/results'>View my results <i className="fas fa-chevron-circle-right"></i></Link>
                     </div>
                     <button 
                         className='btn'
