@@ -13,7 +13,7 @@ const Contact = () => {
     }, [])
 
     const [messageSuccess, toggleMessageSuccess] = useState(false);
-    const [buttonState, handleButtonState] = useState('Submit');
+    const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
     const [message, handleMessage] = useState('');
 
@@ -77,7 +77,7 @@ const Contact = () => {
                                     <div>
                                         <Field
                                             name="name"
-                                            placeholder='Your Name'
+                                            placeholder='Your Full Name'
                                         />
                                     </div>
                                     <div>

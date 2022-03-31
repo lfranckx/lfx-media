@@ -1,0 +1,153 @@
+#results-page {
+    #summary {
+        padding: 100px 10px 10px;
+        background: #1ba49c;
+        height: 450px;
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.8;
+        }
+    }
+
+    #results {
+        margin: -96px auto 80px;
+        padding: 0 20px;
+
+        ul {
+            max-width: 1200px;
+            margin: auto;
+            display: -ms-grid;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 20px;
+
+            li {
+                .card {
+                    background-color: #fff;
+                    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+                            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+                    border-radius: 30px;
+                    padding: 20px 10px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                    -webkit-box-pack: center;
+                    min-height: 100%; // keeps heights the same height as tallest element
+
+                    h2 {
+                        font-size: 24px;
+                        padding: 10px 0 20px;
+                        @media (max-width: 660px) {
+                            font-size: 24px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 60px;
+                        color: #1ba49c;
+                        margin-top: auto;
+                    }
+
+                    .btn-wrap {
+                        margin-top: auto;
+                        margin-bottom: 10px;
+                    }
+
+                    button {
+                        font-size: 20px;
+                        padding: 10px 20px;
+                        color: #fff;
+                        border-radius: 4px;
+                        background-color: #06BC9B;
+                        background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+
+                        &:hover {
+                            background-color: #06BC9B;
+                            background-image: -webkit-linear-gradient(left,#1ba49c,#06BC9B);
+                            
+                            i {
+                                color: #0d4e4a;
+                            }
+                        }
+
+                        i {
+                            font-size: 18px;
+                            color: #fff;
+                            margin-left: 10px;
+                            -webkit-transition: none;
+                            -o-transition: none;
+                            transition: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1233px) {
+        #results {
+            max-width: 750px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        #summary {
+            padding: 80px 10px 10px;
+        }
+
+        #results {
+            margin: -60px auto 80px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        #summary {
+            // padding: 60px 10px 10px;
+            height: 550px;
+        }
+
+        #results {
+            max-width: 350px;
+            margin: -100px auto 80px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #summary {
+            padding: 60px 10px 10px;
+            height: 600px;
+        }
+
+        #results {
+            margin: -80px auto 80px;
+        }
+    }
+
+    @media (max-width: 415px) {
+        #summary {
+            height: 640px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        #summary {
+            height: 700px;
+        }
+    }
+
+    @media (max-width: 350px) {
+        #summary {
+            height: 750px;
+        }
+    }
+}
