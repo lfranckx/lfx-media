@@ -62,7 +62,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Ouidad believes that curly hair is a gift to be embraced and celebrated. They are dedicated to empowering every curly haired individual to understand and love their fabulous hair!</p>
+                                <p>Ouidad believes that curly hair is a gift to be embraced and celebrated. They are dedicated to empowering every curly-haired individual to understand and love their fabulous hair!</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://ouidadeducation.com/'
