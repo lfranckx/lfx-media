@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import axios from 'axios';
 
 const SignUpForm = () => {
-    const [message, handleMessage] = useState('');
+    const [message, handleMessage] = useState();
     const [btnDisabled, handleBtnDisabled] = useState(false);
     const [btnMessage, handleBtnMessage] = useState('Sign Up')
 
@@ -21,7 +21,7 @@ const SignUpForm = () => {
             await axios.post("https://serene-journey-81970.herokuapp.com/", payload);
             handleBtnMessage('Sent');
             handleBtnDisabled(true);
-            handleMessage(`You're all set. Thank you ${name} for signing up! Your newsletter will be emailed to ${email}. If this is not your email feel free to fill out the form again and let me know that there was a mistake.`);
+            handleMessage({ name: name, email: email});
 
         } catch (error) {
             console.log(error.message);
@@ -69,7 +69,12 @@ const SignUpForm = () => {
                     </button>
                 </Form>
             </Formik>
-            {message && <div className='message'>{message}</div>}
+            {message && 
+                <div className='message'>
+                    <h3>You're all set. Thank you {message.name}!</h3>
+                    <p>Your newsletter will be emailed to: <strong className='green'>{message.email}</strong></p>
+                    <p>If this is not your email feel free to fill out the form again.</p>
+                </div>}
         </>
     )
 }
