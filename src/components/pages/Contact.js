@@ -24,6 +24,7 @@ const Contact = () => {
             message: values.message,
             name: values.name,
             phone: values.phone,
+            referral: values.referral,
             reply_to: values.email
         }
 
@@ -40,12 +41,14 @@ const Contact = () => {
         }
     }
 
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+    
     const contactFormSchema = Yup.object().shape({
         name: Yup.string().min(2, '* Name is too short').max(20, "* 20 maximum characters").required('* Required'),
         email: Yup.string().email("* Invalid email").required("* Required"),
         phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
         message: Yup.string().min(2, "* Message is too short").max(300, "* 300 maximum characters").required("* Required"),
+        referral: Yup.string().required("* Required").max(100, "* 100 maximum characters").required("* Required")
     })
 
     return (
@@ -64,7 +67,7 @@ const Contact = () => {
                     <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. How can I help you today?</span></h1>
 
                     <Formik 
-                        initialValues={{ name: "", email: "", phone: "", message: ""}} 
+                        initialValues={{ name: "", email: "", phone: "",  message: "", referral: ""}} 
                         validationSchema={contactFormSchema}
                         onSubmit={submitForm}
                     >
@@ -109,6 +112,19 @@ const Contact = () => {
                                     <div>
                                         <ErrorMessage component="div" className='error' name='phone' />
                                     </div>
+
+                                    <div className="label">
+                                        <label htmlFor="referral"></label>
+                                    </div>
+                                    <div>
+                                        <Field
+                                            name="referral"
+                                            placeholder='Where did you hear about me?'
+                                        />
+                                    </div>
+                                    <div>
+                                        <ErrorMessage component="div" className='error' name='referral' />
+                                    </div>
                                 </div>
 
                                 <div className='wrap'>
@@ -121,7 +137,7 @@ const Contact = () => {
                                             name="message"
                                             as='textarea'
                                             rows='10'
-                                            placeholder='Message'
+                                            placeholder='Describe your project'
                                         />
                                     </div>
                                     <div>
