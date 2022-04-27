@@ -14,7 +14,10 @@ export default function Navbar(props) {
                     <h1><img src={green} alt='lfx media logo'/></h1>
                 </Link>
 
-                {location.pathname === '/contact' ? <Link className="btn" to="/">Close</Link> : <Link className="btn" to="/contact">Say Hello</Link>}
+                <div className='wrap'>
+                    {location.pathname === '/subscribe' ? <Link className="btn" to="/">Close</Link> : <Link className="btn" to="/subscribe">Newsletter</Link>}
+                    {location.pathname === '/contact' ? <Link className="btn" to="/">Close</Link> : <Link className="btn" to="/contact">Say Hello</Link>}
+                </div>
             </nav>
         </div>
     );
