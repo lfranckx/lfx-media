@@ -5,6 +5,7 @@ import axios from 'axios';
 
 const SignUpForm = () => {
     const [message, handleMessage] = useState();
+    const [errorMessage, handleErrorMessage] = useState('');
     const [btnDisabled, handleBtnDisabled] = useState(false);
     const [btnMessage, handleBtnMessage] = useState('Sign Up')
 
@@ -25,7 +26,7 @@ const SignUpForm = () => {
 
         } catch (error) {
             console.log(error.message);
-            handleMessage(error.message);
+            handleErrorMessage(error.message);
         }
     }
 
@@ -75,6 +76,7 @@ const SignUpForm = () => {
                     <p>Your newsletter will be emailed to: <strong className='green'>{message.email}</strong></p>
                     <p>If this is not your email feel free to fill out the form again.</p>
                 </div>}
+            {errorMessage && <div className='message'>{errorMessage}</div>}
         </>
     )
 }

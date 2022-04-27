@@ -15,7 +15,8 @@ const Contact = () => {
     const [messageSuccess, toggleMessageSuccess] = useState(false);
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
-    const [message, handleMessage] = useState('');
+    const [message, handleMessage] = useState();
+    const [errorMessage, handleErrorMessage] = useState('');
 
     const submitForm = (values) => {
         handleButtonState('Sending');
@@ -34,6 +35,7 @@ const Contact = () => {
                     toggleMessageSuccess(true);
                     handleButtonState('Sent!');
                     handleButtonDisabled(true);
+                    handleMessage({ name: values.name })
                 }
             )
         } catch (error) {
@@ -49,7 +51,7 @@ const Contact = () => {
         phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
         message: Yup.string().min(2, "* Message is too short").max(300, "* 300 maximum characters").required("* Required"),
         referral: Yup.string().required("* Required").max(100, "* 100 maximum characters").required("* Required")
-    })
+    });
 
     return (
         <>
@@ -63,7 +65,7 @@ const Contact = () => {
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
-                    <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for contacting me.</span><span>You will be hearing from me very soon...</span><span className='mt10'>^_^</span></h1>
+                    {message && <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for reaching out {message.name}.</span><span>I normally respond within 1-2 business days.</span></h1>}
                     <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. How can I help you today?</span></h1>
 
                     <Formik 
@@ -148,15 +150,15 @@ const Contact = () => {
 
                             <button className="btn" type="submit" disabled={buttonDisabled}>
                                 {buttonState}
-                            </button> 
+                            </button>
                         </Form>  
                     </Formik>
 
-                    {message && <div className='message'>{message}</div>}
+                    {errorMessage && <div className='message'>{errorMessage}</div>}
                 </section>
             </main>
         </>
-    )
+    );
 }
 
 export default Contact;
