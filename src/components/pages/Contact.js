@@ -51,7 +51,7 @@ const Contact = () => {
     return (
         <>
             <Helmet >
-                <title>Contact Lachlan Franckx</title>
+                <title>Contact | LFX Media</title>
                 <meta name='description' content='Get in touch with Lachlan Franckx about his web services.'/>
             </Helmet>
             <main>

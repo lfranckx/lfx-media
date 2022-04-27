@@ -8,7 +8,7 @@
         margin: auto;
     }
 
-    h2, h3 {
+    h2, h3, p {
         color: #fff;
     }
 
@@ -18,6 +18,10 @@
 
     h3 {
         font-family: 'Europa', 'Montserrat', sans-serif;
+        line-height: 1.8;
+    }
+
+    p {
         line-height: 1.8;
     }
 

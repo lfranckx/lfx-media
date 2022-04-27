@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Footer from './Footer';
 import NotFound from './pages/NotFound';
 import Results from './pages/Results';
+import Subscribe from './pages/Subscribe';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path="/results" component={Results} />
+          <Route exact path="/subscribe" component={Subscribe} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

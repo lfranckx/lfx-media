@@ -13,7 +13,7 @@ export default function NotFound () {
     return (
         <>
             <Helmet >
-                <title>404 Not Found</title>
+                <title>404 Not Found | LFX Media</title>
                 <meta name='description' content='404, Page Not Found'/>
             </Helmet>
             <main id='notfound'>

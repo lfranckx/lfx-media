@@ -70,6 +70,29 @@ li {
   list-style-type: none;
 }
 
+label { 
+  font-size: 20px; 
+}
+
+input, textarea {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 240px;
+
+  @media(max-width: 1100px) {
+      width: 100%;
+      margin: 10px auto;
+  }
+}
+
+textarea {
+  width: 380px;
+  @media(max-width: 1100px) {
+      width: 100%;
+  }
+}
+
 button {
   background: none;
   outline: unset;
@@ -82,15 +105,16 @@ button {
 
 .btn {
   border: #1ba49c solid 2px;
+  color: #1ba49c;
   border-radius: 100px;
   padding: 10px 30px;
   font-size: 20px;
   font-weight: 500;
-}
 
-.btn:hover, .btn:disabled {
-  background: #1ba49c;
-  color: #fff;
+  &:hover, &:disabled {
+    background: #1ba49c;
+    color: #fff;
+  }
 }
 
 .btn-secondary {
@@ -122,18 +146,16 @@ button {
   }
 }
 
+.error {
+  text-align: left;
+  padding-left: 10px;
+  color: #1ba49c;
+}
+
 .fade-in {
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
-}
-
-.hide {
-  display: none;
-}
-
-.mt10 {
-  margin-top: 10px;
 }
 
 .flex {
@@ -152,6 +174,14 @@ button {
       max-width: 600px;
       margin: 32px auto 0;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.mt10 {
+  margin-top: 10px;
 }
 
 @media (max-width: 750px) {
