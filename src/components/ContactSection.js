@@ -6,10 +6,12 @@ import * as emailjs from 'emailjs-com';
 import me from '../images/me.png';
 
 export default function ContactSection() {
+
     const [messageSuccess, toggleMessageSuccess] = useState(false);
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
-    const [message, handleMessage] = useState('');
+    const [message, handleMessage] = useState();
+    const [errorMessage, handleErrorMessage] = useState('');
 
     const submitForm = (values) => {
         handleButtonState('Sending');
@@ -18,6 +20,7 @@ export default function ContactSection() {
             message: values.message,
             name: values.name,
             phone: values.phone,
+            referral: values.referral,
             reply_to: values.email
         }
 
@@ -40,6 +43,7 @@ export default function ContactSection() {
         email: Yup.string().email("* Invalid email").required("* Required"),
         phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
         message: Yup.string().min(2, "* Message is too short").max(120, "* 120 maximum characters").required("* Required"),
+        referral: Yup.string().required("* Required").max(100, "* 100 maximum characters").required("* Required")
     })
 
     return (
@@ -51,7 +55,7 @@ export default function ContactSection() {
             <div className='form-wrap'>
                 <h2>Run your business while I grow your buiness.</h2>
                 <Formik 
-                    initialValues={{ name: "", email: "", phone: "", message: ""}} 
+                    initialValues={{ name: "", email: "", phone: "",  message: "", referral: ""}} 
                     validationSchema={contactFormSchema}
                     onSubmit={submitForm}
                 >
@@ -65,6 +69,7 @@ export default function ContactSection() {
                                     <Field
                                         name="name"
                                         placeholder='Your Full Name'
+                                        className='input'
                                     />
                                 </div>
                                 <div>
@@ -78,6 +83,7 @@ export default function ContactSection() {
                                     <Field
                                         name="email"
                                         placeholder="Your Email"
+                                        className='input'
                                     />
                                 </div>
                                 <div>
@@ -91,10 +97,25 @@ export default function ContactSection() {
                                     <Field
                                         name="phone"
                                         placeholder='Your Phone Number'
+                                        className='input'
                                     />
                                 </div>
                                 <div>
                                     <ErrorMessage component="div" className='error' name='phone' />
+                                </div>
+
+                                <div className="label">
+                                    <label htmlFor="referral"></label>
+                                </div>
+                                <div>
+                                    <Field
+                                        name="referral"
+                                        placeholder='Where did you hear about me?'
+                                        className='input'
+                                    />
+                                </div>
+                                <div>
+                                    <ErrorMessage component="div" className='error' name='referral' />
                                 </div>
                             </div>
 

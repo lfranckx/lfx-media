@@ -2,9 +2,25 @@
     max-width: 1200px;
     margin: auto;
     padding: 32px;
+    align-items: center;
 
     img {
         border-radius: 50%;
         margin: 32px 0;
+    }
+
+    .form-wrap {
+        width: 100%;
+
+        .wrap:nth-child(1) {
+            width: 100%;
+            margin: 0 20px 0 40px;
+
+            div {
+                .input {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
