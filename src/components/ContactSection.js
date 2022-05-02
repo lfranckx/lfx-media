@@ -53,7 +53,7 @@ export default function ContactSection() {
             </div>
 
             <div className='form-wrap'>
-                <h2>Run your business while I grow your buiness.</h2>
+                <h2>Fill out the contact form to schedule an appointment</h2>
                 <Formik 
                     initialValues={{ name: "", email: "", phone: "",  message: "", referral: ""}} 
                     validationSchema={contactFormSchema}
@@ -129,7 +129,7 @@ export default function ContactSection() {
                                         name="message"
                                         as='textarea'
                                         rows='10'
-                                        placeholder='Message'
+                                        placeholder='Describe your project'
                                     />
                                 </div>
                                 <div>

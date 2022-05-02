@@ -13,9 +13,9 @@
     .form-wrap {
         width: 100%;
 
-        .wrap {
-            width: 350px;
-            margin: 0 20px;
+        .wrap:nth-child(1) {
+            width: 100%;
+            margin: 0 40px;
 
             div {
                 .input {
