@@ -47,10 +47,7 @@ export default function ContactSection() {
     })
 
     return (
-        <section id='contact-section' className='flex'>
-            <div>
-                <img src={me} alt='Myself and the pups' width='250px'/>
-            </div>
+        <section id='contact-section'>
 
             <div className='form-wrap'>
                 <h2>Fill out the contact form to schedule an appointment</h2>
@@ -130,6 +127,7 @@ export default function ContactSection() {
                                         as='textarea'
                                         rows='10'
                                         placeholder='Describe your project'
+                                        className='input'
                                     />
                                 </div>
                                 <div>

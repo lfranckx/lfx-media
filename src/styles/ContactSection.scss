@@ -2,8 +2,6 @@
     max-width: 1200px;
     margin: auto;
     padding: 32px;
-    align-items: center;
-    justify-content: center;
 
     img {
         border-radius: 50%;
@@ -13,9 +11,9 @@
     .form-wrap {
         width: 100%;
 
-        .wrap:nth-child(1) {
+        .wrap {
             width: 100%;
-            margin: 0 40px;
+            margin: 0 20px;
 
             div {
                 .input {
