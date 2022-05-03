@@ -192,6 +192,10 @@ button {
   margin-top: 10px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 750px) {
   h2 {
     font-size: 28px;

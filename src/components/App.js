@@ -17,9 +17,15 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false);
+      // setLoading(false);
     }, 2000);
   }, [])
+
+  if (loading) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
 
   return (
     <>
@@ -31,7 +37,7 @@ function App() {
 
       <LoadingScreen loading={loading} />
 
-      <div className={'app'}>
+      <div className={loading ? 'app loading' : 'app'}>
         <Navbar loading={loading} />
         <Switch>
           <Route exact path="/" component={Homepage} />
@@ -42,7 +48,6 @@ function App() {
         </Switch>
         <Footer />
       </div>
-      
     </>
   );
 }
