@@ -2,16 +2,18 @@ import React from 'react';
 import '../styles/Navbar.scss';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
-import green from '../images/green-logo.png';
+import green from '../images/logo-green.png';
+import white from '../images/logo-white.png';
 
 export default function Navbar(props) {
     const location = useLocation();
+    const { loading } = props;
 
     return (
-        <div id={props.id} className='nav'>
+        <div className='nav'>
             <nav>
                 <Link to="/">
-                    <h1><img src={green} alt='lfx media logo'/></h1>
+                    <h1><img src={ loading ? white : green} alt='lfx media logo' className={ loading ? 'loading' : '' } /></h1>
                 </Link>
 
                 <div className='wrap'>

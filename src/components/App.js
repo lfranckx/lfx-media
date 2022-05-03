@@ -1,5 +1,5 @@
 import '../styles/App.scss';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
@@ -10,8 +10,17 @@ import Footer from './Footer';
 import NotFound from './pages/NotFound';
 import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
+import LoadingScreen from './LoadingScreen';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [])
+
   return (
     <>
       <Helmet >
@@ -19,8 +28,11 @@ function App() {
         <meta name='description' content='Lachlan Franckx | Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager | I build beautiful and effective websites and online stores that help businesses succeed.'/>
         <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager' />
       </Helmet>
-      <div className='app'>
-        <Navbar />
+
+      <LoadingScreen loading={loading} />
+
+      <div className={'app'}>
+        <Navbar loading={loading} />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={Contact} />
@@ -30,6 +42,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
+      
     </>
   );
 }
