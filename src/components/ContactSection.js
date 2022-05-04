@@ -57,7 +57,6 @@ export default function ContactSection() {
                     onSubmit={submitForm}
                 >
                     <Form>
-                        <div className='flex'>
                             <div className='wrap'>
                                 <div className="label">
                                     <label htmlFor="name"></label>
@@ -134,7 +133,6 @@ export default function ContactSection() {
                                     <ErrorMessage component="div" className='error' name='message' />
                                 </div>
                             </div>
-                        </div>
 
                         <button className="btn" type="submit" disabled={buttonDisabled}>
                             {buttonState}
