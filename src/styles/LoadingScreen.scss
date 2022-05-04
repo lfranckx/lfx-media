@@ -21,8 +21,108 @@
         transition: all .8s ease;
     }
 
-    h2 {
-        color: #fff;
-        font-size: 80px;
+    .text-wrap {
+        .has-animation {
+            position: relative;
+            margin: 10px 0;
+
+            h2 {
+                color: #fff;
+                font-size: 80px;
+                opacity: 0;
+            }
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                z-index: 10;
+            }
+
+            &:before {
+                background-color: #000;
+            }
+            &:after {
+                background-color: #fff;
+                animation-delay: .5s;
+            }
+
+            &.first{
+                &:before {
+                    animation: revealLTR 1.2s 2s ease;
+                }
+                &:after {
+                    animation: revealLTR 1.8s 2s ease;
+                }
+                h2 {
+                    animation: revealOpacity 0.6s 3.2s forwards;
+                }
+            }
+
+            &.second {
+                &:before {
+                    animation: revealRTL 1.2s 5s ease;
+                }
+                &:after {
+                    animation: revealRTL 1.8s 5s ease;
+                }
+                h2 {
+                    animation: revealOpacity 0.6s 6.2s forwards;
+                }
+            }
+
+            &.third {
+                &:before {
+                    animation: revealLTR 1.2s 8s ease;
+                }
+                &:after {
+                    animation: revealLTR 1.8s 8s ease;
+                }
+                h2 {
+                    animation: revealOpacity 0.6s 9.2s forwards;
+                }
+            }
+        }
+    }
+}
+
+@keyframes revealLTR {
+    0%{
+        width: 0;
+        left: 0;
+    }
+    65%{
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes revealRTL {
+    0%{
+        width: 0;
+        right: 0;
+    }
+    65%{
+        width: 100%;
+        right: 0;
+    }
+    100% {
+        width: 0;
+        right: 100%;
+    }
+}
+
+@keyframes revealOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
