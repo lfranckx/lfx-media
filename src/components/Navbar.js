@@ -32,7 +32,7 @@ export default function Navbar(props) {
                     <Link className='navlink' to="/results" onClick={() => {setActive(!active)}}>Results</Link>
                     <Link className='navlink' to="/subscribe" onClick={() => {setActive(!active)}}>Newsletter</Link>
                     {location.pathname === '/contact' 
-                    ? <Link className="btn" to="/" onClick={() => {setActive(!active)}}>Close</Link> 
+                    ? <Link className="btn" to="/" onClick={() => {setActive(!active)}}>Home</Link> 
                     : <Link className="btn" to="/contact" onClick={() => {setActive(!active)}}>Say Hello</Link>}
                 </nav>
             </div>
