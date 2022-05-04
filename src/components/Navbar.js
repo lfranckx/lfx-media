@@ -29,9 +29,11 @@ export default function Navbar(props) {
             </nav>
             <div id='mobile-menu' className={`${active ? 'show' : 'hide'}`}>
                 <nav className='navlinks'>
-                    <Link className='navlink' to="/results">Results</Link>
-                    <Link className='navlink' to="/subscribe">Newsletter</Link>
-                    {location.pathname === '/contact' ? <Link className="btn" to="/">Close</Link> : <Link className="btn" to="/contact">Say Hello</Link>}
+                    <Link className='navlink' to="/results" onClick={() => {setActive(!active)}}>Results</Link>
+                    <Link className='navlink' to="/subscribe" onClick={() => {setActive(!active)}}>Newsletter</Link>
+                    {location.pathname === '/contact' 
+                    ? <Link className="btn" to="/" onClick={() => {setActive(!active)}}>Close</Link> 
+                    : <Link className="btn" to="/contact" onClick={() => {setActive(!active)}}>Say Hello</Link>}
                 </nav>
             </div>
         </div>
