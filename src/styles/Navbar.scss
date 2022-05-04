@@ -30,7 +30,6 @@
             .btn {
                 margin: 0 10px;
                 padding: 6px 18px;
-                // font-size: 18px;
             }
 
             .navlink {
@@ -40,19 +39,6 @@
 
                 &:hover {
                     color: #1ba49c;
-                }
-            }
-
-            @media(max-width: 750px) {
-                .btn {
-                    padding: 6px 18px;
-                    font-size: 16px;
-                    margin: 5px;
-                }
-
-                .navlink {
-                    font-size: 16px;
-                    margin-right: 5px;
                 }
             }
         }
