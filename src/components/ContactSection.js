@@ -50,7 +50,7 @@ export default function ContactSection() {
         <section id='contact-section'>
 
             <div className='form-wrap'>
-                <h2>Fill out the contact form to schedule an appointment</h2>
+                <h2>Schedule a free consultation</h2>
                 <Formik 
                     initialValues={{ name: "", email: "", phone: "",  message: "", referral: ""}} 
                     validationSchema={contactFormSchema}
