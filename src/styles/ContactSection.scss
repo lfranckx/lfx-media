@@ -10,10 +10,11 @@
 
     .form-wrap {
         width: 100%;
-
+        margin: auto;
         .wrap {
-            width: 100%;
-            margin: 0 20px;
+            width: auto;
+            max-width: 750px;
+            margin: 0 auto;
 
             div {
                 .input {
