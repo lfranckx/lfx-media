@@ -10,7 +10,6 @@ export default function ContactSection() {
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
     const [message, handleMessage] = useState();
-    const [errorMessage, handleErrorMessage] = useState('');
 
     const submitForm = (values) => {
         handleButtonState('Sending');
@@ -29,6 +28,7 @@ export default function ContactSection() {
                     toggleMessageSuccess(true);
                     handleButtonState('Sent!');
                     handleButtonDisabled(true);
+                    handleMessage(`Thank you ${newValues.name}, I will be responding back shortly to ${newValues.email}. If this is not your email please feel free to resubmit your message.`)
                 }
             )
         } catch (error) {
@@ -139,7 +139,7 @@ export default function ContactSection() {
                     </Form>  
                 </Formik>
 
-                {message && <div className='message'>{message}</div>}
+                {message && <h3 className='message'>{message}</h3>}
             </div>
         </section>
     );

@@ -11,7 +11,7 @@ export default function Navbar(props) {
     return (
         <div id={props.id} className='nav'>
             <nav>
-                <Link to="/">
+                <Link to="/" onClick={() => {setActive(false)}}>
                     <h1><img src={green} alt='lfx media logo'/></h1>
                 </Link>
 
@@ -29,11 +29,11 @@ export default function Navbar(props) {
             </nav>
             <div id='mobile-menu' className={`${active ? 'show' : 'hide'}`}>
                 <nav className='navlinks'>
-                    <Link className='navlink' to="/results" onClick={() => {setActive(!active)}}>Results</Link>
-                    <Link className='navlink' to="/subscribe" onClick={() => {setActive(!active)}}>Newsletter</Link>
+                    <Link className='navlink' to="/results" onClick={() => {setActive(false)}}>Results</Link>
+                    <Link className='navlink' to="/subscribe" onClick={() => {setActive(false)}}>Newsletter</Link>
                     {location.pathname === '/contact' 
-                    ? <Link className="btn" to="/" onClick={() => {setActive(!active)}}>Home</Link> 
-                    : <Link className="btn" to="/contact" onClick={() => {setActive(!active)}}>Say Hello</Link>}
+                    ? <Link className="btn" to="/" onClick={() => {setActive(false)}}>Home</Link> 
+                    : <Link className="btn" to="/contact" onClick={() => {setActive(false)}}>Say Hello</Link>}
                 </nav>
             </div>
         </div>
