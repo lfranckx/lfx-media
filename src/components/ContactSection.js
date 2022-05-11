@@ -3,7 +3,6 @@ import '../styles/ContactSection.scss';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import * as emailjs from 'emailjs-com';
-import me from '../images/me.png';
 
 export default function ContactSection() {
 
