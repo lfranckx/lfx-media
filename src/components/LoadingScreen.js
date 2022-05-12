@@ -15,7 +15,7 @@ export default function LoadingScreen(props) {
     return (
         <>
             <div className={ loading ? 'loading-screen active' : 'loading-screen hidden'}>
-                <div className='logo-wrap'>
+                <div className={loading ? `hide` : `logo-wrap`}>
                 <svg width="938" height="466" viewBox="0 0 938 466" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M115.45 345.45V350.449L120.449 350.45L254.298 350.487L221.154 384.66H77V85.6599H115.45V345.45Z" fill="#1BA49C" stroke="white" strokeWidth="10"/>
                     <path d="M376.17 216H503.46V250H376.17H371.17V255V384.66H332.71V85.6599H553.992L577.198 119.819L376.17 119.8L371.17 119.799V124.8V211V216H376.17Z" fill="#1BA49C" stroke="white" strokeWidth="10"/>
