@@ -21,7 +21,10 @@
     }
 
     .logo-wrap {
-        margin-bottom: 64px;
+        
+        @media(max-width: 750px) {
+            margin-bottom: 64px;
+        }
 
         svg {
             max-width: 500px;
