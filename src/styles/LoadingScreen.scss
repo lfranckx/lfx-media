@@ -31,15 +31,15 @@
 
             path:nth-child(1) {
                 // Letter L
-                stroke-dasharray: 929px;
-                stroke-dashoffset: 929px;
+                stroke-dasharray: 933px;
+                stroke-dashoffset: 933px;
                 animation: lineAnimate 2s 3s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(2) {
                 // Letter F
-                stroke-dasharray: 1324px;
-                stroke-dashoffset: 1324px;
+                stroke-dasharray: 1336px;
+                stroke-dashoffset: 1336px;
                 animation: lineAnimate 2s 4s ease forwards, fill 0.5s 8s forwards;
             }
 
@@ -52,16 +52,24 @@
 
             path:nth-child(5) {
                 // Letter X
-                stroke-dasharray: 1647px;
-                stroke-dashoffset: 1647px;
+                stroke-dasharray: 1668px;
+                stroke-dashoffset: 1668px;
                 animation: lineAnimate 2s 5s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(6) {
                 // Border
-                stroke-dasharray: 5149px;
-                stroke-dashoffset: 5149px;
+                stroke-dasharray: 5165px;
+                stroke-dashoffset: 5165px;
                 animation: lineAnimate 3s 5s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            @media(max-width: 750px) {
+                max-width: 300px;
+            }
+
+            @media(max-width: 500px) {
+                max-width: 250px;
             }
         }
 
