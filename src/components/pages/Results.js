@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import computer from '../../images/computer.png';
 import ResultsPopup from '../ResultsPopup';
 import ContactSection from '../ContactSection';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 export default function Results() {
     useEffect(() => {
@@ -22,7 +23,12 @@ export default function Results() {
                 <title>2021 Client Case Study | LFX Media</title>
                 <meta name='description' content='Getting the best results for my clients through Search Engine Optimization, Online Marketing, and Professional Web Design and Development'/>
             </Helmet>
-            <div id='results-page'>
+            <motion.div 
+                id='results-page'
+                initial={{ opacity: 0 }}    
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}    
+            >
                 <header>
                     <h1>2021 Client Case Study</h1>
                     <h2>*Due to the client’s need for privacy the business’s name is left out</h2>
@@ -88,7 +94,7 @@ export default function Results() {
                         conversionCardOpen = {conversionCardOpen}
                     />
                 </main>
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import '../styles/App.scss';
 import React from 'react';
-import { withRouter, Switch, Route, useLocation } from 'react-router-dom';
+import { withRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-// import { useTransition, animated } from 'react-spring';
+import { AnimatePresence } from 'framer-motion/dist/framer-motion';
 
 import Navbar from './Navbar';
 import Homepage from './pages/Homepage';
@@ -13,8 +13,6 @@ import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
 
 function App() {
-  const location = useLocation();
-  console.log(location);
   return (
     <>
       <Helmet >
@@ -24,13 +22,15 @@ function App() {
       </Helmet>
       <div className='app'>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path="/results" component={Results} />
-          <Route exact path="/subscribe" component={Subscribe} />
-          <Route component={NotFound} />
-        </Switch>
+        <AnimatePresence>
+          <Switch >
+            <Route exact path="/" component={Homepage} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path="/results" component={Results} />
+            <Route exact path="/subscribe" component={Subscribe} />
+            <Route component={NotFound} />
+          </Switch>
+        </AnimatePresence>
         <Footer />
       </div>
     </>

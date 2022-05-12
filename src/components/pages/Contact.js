@@ -5,7 +5,7 @@ import * as emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
 import '../../styles/Contact.scss';
 import me from '../../images/me.png';
-
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Contact = () => {
     useEffect(() => {
@@ -59,7 +59,11 @@ const Contact = () => {
                 <title>Contact | LFX Media</title>
                 <meta name='description' content='Get in touch with Lachlan Franckx about his web services.'/>
             </Helmet>
-            <main>
+            <motion.main
+                initial={{ opacity: 0 }}    
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
                 <section id='contact'>
                     <div>
                         <img src={me} alt='Myself and the pups' width='250px'/>
@@ -156,7 +160,7 @@ const Contact = () => {
 
                     {errorMessage && <div className='message'>{errorMessage}</div>}
                 </section>
-            </main>
+            </motion.main>
         </>
     );
 }

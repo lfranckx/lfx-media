@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import computer from '../../images/computer.png';
 import { Link } from 'react-scroll';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import About from '../About';
 import Projects from '../Projects';
@@ -16,7 +17,12 @@ export default function Homepage() {
     
     return (
         <>
-            <div id="homepage">
+            <motion.div 
+                id="homepage"
+                initial={{ opacity: 0 }}    
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
                 <header>
                     <h1>Web Developer, Full-stack Engineer &amp; SEO Manager</h1>
                     <h2>I build beautiful and effective online stores that help businesses succeed.</h2>
@@ -36,7 +42,7 @@ export default function Homepage() {
                     <Testimonials />
                     <ContactBar />
                 </main>
-            </div>
+            </motion.div>
         </>
     );
 }

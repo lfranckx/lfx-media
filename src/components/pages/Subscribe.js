@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import '../../styles/Subscribe.scss';
 import computer from '../../images/computer.png';
 import SignUpForm from '../SignUpForm';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 export default function SubscribePage() {
     useEffect(() => {
@@ -15,7 +16,12 @@ export default function SubscribePage() {
                 <title>Subscribe | LFX Media</title>
                 <meta name='description' content='Subscribe to receive my educational newsletter where I give tips and advice. Be the first to know of important news and special offers!'/>
             </Helmet>
-            <div id='subscribe-page'>
+            <motion.div
+                initial={{ opacity: 0 }}    
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                id='subscribe-page'
+            >
                 <header>
                     <div className='container'>
                         <div className='text-wrap'>
@@ -34,7 +40,7 @@ export default function SubscribePage() {
                         <img src={computer} alt='desktop workspace' />
                     </div>
                 </header>
-            </div>
+            </motion.div>
         </>
     )
 }
