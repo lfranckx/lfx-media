@@ -1,5 +1,5 @@
 import '../styles/App.scss';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
@@ -13,6 +13,20 @@ import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 13000);
+  // }, [])
+
+  if (loading) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
+
   return (
     <>
       <Helmet >
