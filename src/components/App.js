@@ -16,11 +16,11 @@ import LoadingScreen from './LoadingScreen';
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 13000);
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 8800);
+  }, [])
 
   if (loading) {
     document.body.classList.add('no-scroll');
