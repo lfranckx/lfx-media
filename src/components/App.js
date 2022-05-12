@@ -11,6 +11,7 @@ import Footer from './Footer';
 import NotFound from './pages/NotFound';
 import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
+import LoadingScreen from './LoadingScreen';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
       </Helmet>
       <div className='app'>
         <Navbar />
+        <LoadingScreen loading={loading} />
         <AnimatePresence>
           <Switch >
             <Route exact path="/" component={Homepage} />
