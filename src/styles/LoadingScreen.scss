@@ -1,0 +1,184 @@
+.loading-screen{
+
+    &.active {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1ba49c;
+        z-index: 1;
+    }
+    
+    &.hidden {
+        width: 0;
+        height: 0;
+        z-index: -1;
+        transition: all .8s ease;
+    }
+
+    .logo-wrap {
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            z-index: 10;
+            // clip-path: polygon(33% 1%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        &:before {
+            background-color: #141C3A;
+            animation: revealRTL 1.2s 10s ease;
+        }
+        &:after {
+            background-color: #fff;
+            animation-delay: 11s;
+            animation: revealRTL 1.8s 10s ease;
+        }
+
+        img {
+            max-width: 120px;
+            border-radius: 4px;
+            opacity: 0;
+            animation: revealOpacity 0.6s 11.2s forwards;
+        }
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+
+        .text-wrap {
+            .has-animation {
+                position: relative;
+                margin: 10px 0;
+    
+                h2 {
+                    color: #fff;
+                    font-size: 80px;
+                    opacity: 0;
+                }
+    
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    z-index: 10;
+                }
+    
+                &:before {
+                    background-color: #141C3A;
+                }
+                &:after {
+                    background-color: #fff;
+                    animation-delay: .5s;
+                }
+    
+                &.first{
+                    &:before {
+                        animation: revealLTR 1.2s 2s ease;
+                    }
+                    &:after {
+                        animation: revealLTR 1.8s 2s ease;
+                    }
+                    h2 {
+                        animation: revealOpacity 0.6s 3.2s forwards;
+                    }
+                }
+    
+                &.second {
+                    &:before {
+                        animation: revealRTL 1.2s 5s ease;
+                    }
+                    &:after {
+                        animation: revealRTL 1.8s 5s ease;
+                    }
+                    h2 {
+                        animation: revealOpacity 0.6s 6.2s forwards;
+                    }
+                }
+    
+                &.third {
+                    &:before {
+                        animation: revealLTR 1.2s 8s ease;
+                    }
+                    &:after {
+                        animation: revealLTR 1.8s 8s ease;
+                    }
+                    h2 {
+                        animation: revealOpacity 0.6s 9.2s forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes revealLTR {
+    0%{
+        width: 0;
+        left: 0;
+        // transform: translateX(0);
+    }
+    50%{
+        width: 100%;
+        left: 0;
+        // transform: translateX(10%);
+        // height: 50%;
+        // clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+    }
+    100% {
+        width: 0;
+        left: 100%;
+        // transform: translateX(0%);
+        // height: 100%;
+    }
+}
+
+@keyframes revealRTL {
+    0%{
+        width: 0;
+        right: 0;
+        // transform: translateX(0);
+    }
+    50%{
+        width: 100%;
+        right: 0;
+        // transform: translateX(-10%);
+        // height: 50%;
+        // clip-path: polygon(33% 1%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        width: 0;
+        right: 100%;
+        // transform: translateX(0%);
+        // height: 100%;
+    }
+}
+
+@keyframes revealOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
