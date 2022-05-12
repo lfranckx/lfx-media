@@ -8,6 +8,9 @@
         left: 0;
         background-color: #1ba49c;
         z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     &.hidden {
@@ -18,10 +21,8 @@
     }
 
     .logo-wrap {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin-bottom: 64px;
+
         svg {
             max-width: 500px;
 
