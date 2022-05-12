@@ -6,7 +6,6 @@ import * as emailjs from 'emailjs-com';
 
 export default function ContactSection() {
 
-    const [messageSuccess, toggleMessageSuccess] = useState(false);
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
     const [message, handleMessage] = useState();
@@ -25,7 +24,6 @@ export default function ContactSection() {
         try {
             emailjs.send("service_if54qk7", "template_5f9yjza", newValues, "user_4ZnH44kohKcJmQhnL2VGX")
             .then(res => {
-                    toggleMessageSuccess(true);
                     handleButtonState('Sent!');
                     handleButtonDisabled(true);
                     handleMessage(`Thank you ${newValues.name}, I will be responding back shortly to ${newValues.email}. If this is not your email please feel free to resubmit your message.`)

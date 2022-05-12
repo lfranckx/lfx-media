@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import '../../styles/Subscribe.scss';
 import computer from '../../images/computer.png';
-import me from '../../images/me.png';
 import SignUpForm from '../SignUpForm';
 
 export default function SubscribePage() {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

@@ -1,7 +1,8 @@
 import '../styles/App.scss';
 import React from 'react';
-import { withRouter, Switch, Route } from 'react-router-dom';
+import { withRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+// import { useTransition, animated } from 'react-spring';
 
 import Navbar from './Navbar';
 import Homepage from './pages/Homepage';
@@ -12,6 +13,8 @@ import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
 
 function App() {
+  const location = useLocation();
+  console.log(location);
   return (
     <>
       <Helmet >
