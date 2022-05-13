@@ -12,7 +12,7 @@
     }
     
     &.hidden {
-        height: 0;
+        // height: 0;
         z-index: -1;
         transition: all .8s ease;
     }
@@ -37,42 +37,42 @@
             max-width: 500px;
 
             path {
-                animation: fill 0.5s 8s forwards;
+                animation: fill 0.5s 7s forwards;
             }
 
             path:nth-child(1) {
                 // Letter L
                 stroke-dasharray: 933px;
                 stroke-dashoffset: 933px;
-                animation: lineAnimate 2s 3s ease forwards, fill 0.5s 8s forwards;
+                animation: lineAnimate 2s 2s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(2) {
                 // Letter F
                 stroke-dasharray: 1336px;
                 stroke-dashoffset: 1336px;
-                animation: lineAnimate 2s 4s ease forwards, fill 0.5s 8s forwards;
+                animation: lineAnimate 2s 3s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(3) {
                 // Letter F bottom
                 stroke-dasharray: 266px;
                 stroke-dashoffset: 266px;
-                animation: lineAnimate 1s 4s ease forwards, fill 0.5s 8s forwards;
+                animation: lineAnimate 1s 3s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(5) {
                 // Letter X
                 stroke-dasharray: 1668px;
                 stroke-dashoffset: 1668px;
-                animation: lineAnimate 2s 5s ease forwards, fill 0.5s 8s forwards;
+                animation: lineAnimate 2s 4s ease forwards, fill 0.5s 8s forwards;
             }
 
             path:nth-child(6) {
                 // Border
                 stroke-dasharray: 5165px;
                 stroke-dashoffset: 5165px;
-                animation: lineAnimate 3s 5s ease forwards, fill 0.5s 8s forwards;
+                animation: lineAnimate 3s 4s ease forwards, fill 0.5s 8s forwards;
             }
 
             @media(max-width: 750px) {
