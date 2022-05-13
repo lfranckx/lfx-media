@@ -6,24 +6,31 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #1ba49c;
+        // background-color: #1ba49c;
+        background-color: #fff;
         z-index: 5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     &.hidden {
-        width: 0;
         height: 0;
         z-index: -1;
         transition: all .8s ease;
     }
 
     .logo-wrap {
+        opacity: 1;
+        transition: all .8s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.fadeout {
+            opacity: 0;
+        }
         
         @media(max-width: 750px) {
-            margin-bottom: 80px;
+            transform: translate(-50%, -50%);
         }
 
         svg {
@@ -89,7 +96,7 @@
             }
             
             to {
-                fill: #fff;
+                fill: #1BA49C;
             }
         }
     }
