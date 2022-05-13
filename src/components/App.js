@@ -1,7 +1,8 @@
 import '../styles/App.scss';
 import React, { useState, useEffect } from 'react';
-import { withRouter, Switch, Route } from 'react-router-dom';
+import { withRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useTransition, animated } from 'react-spring';
 
 import Navbar from './Navbar';
 import Homepage from './pages/Homepage';
@@ -27,6 +28,14 @@ function App() {
     document.body.classList.remove('no-scroll');
   }
 
+  const location = useLocation();
+  const transitions = useTransition(location, {
+    keys: (location) => location.pathname,
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 }
+  });
+
   return (
     <>
       <Helmet >
@@ -35,17 +44,21 @@ function App() {
         <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager' />
       </Helmet>
 
-      <LoadingScreen loading={loading} />
+      {/* <LoadingScreen loading={loading} /> */}
 
       <div className={loading ? 'app loading' : 'app'}>
         <Navbar loading={loading} />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path="/results" component={Results} />
-          <Route exact path="/subscribe" component={Subscribe} />
-          <Route component={NotFound} />
-        </Switch>
+        {transitions.map((styles, item) => (
+          <animated.div style={styles}>
+            <Switch location={item}>
+              <Route exact path="/" component={Homepage} />
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path="/results" component={Results} />
+              <Route exact path="/subscribe" component={Subscribe} />
+              <Route component={NotFound} />
+            </Switch>
+          </animated.div> 
+        ))}
         <Footer />
       </div>
     </>
