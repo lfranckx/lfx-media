@@ -40,11 +40,11 @@ function App() {
         <LoadingScreen loading={loading} />
         <AnimatePresence>
           <Switch >
-            <Route exact path="/" component={Homepage} />
-            <Route exact path='/contact' component={Contact} />
-            <Route exact path="/results" component={Results} />
-            <Route exact path="/subscribe" component={Subscribe} />
-            <Route component={NotFound} />
+            <Route exact path="/" render={() => <Homepage loading={loading}/>} />
+            <Route exact path='/contact' render={() => <Contact loading={loading}/>} />
+            <Route exact path="/results" render={() => <Results loading={loading}/>} />
+            <Route exact path="/subscribe" render={() => <Subscribe loading={loading}/>} />
+            <Route render={() => <NotFound loading={loading}/>} />
           </Switch>
         </AnimatePresence>
         <Footer />

@@ -36,6 +36,11 @@ body {
   text-align: center;
 }
 
+main {
+  opacity: 0;
+  transition: all ease 1s;
+}
+
 h1, h2, h3, h4, h5, ul, p, a {
   margin: 0;
   padding: 0;
@@ -156,6 +161,11 @@ button {
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
+}
+
+.fade-in-screen {
+  opacity: 1;
+  transition: all 1s ease;
 }
 
 .flex {

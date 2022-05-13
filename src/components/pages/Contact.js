@@ -3,11 +3,11 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import * as emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
-import '../../styles/Contact.scss';
+import '../../styles/pages/Contact.scss';
 import me from '../../images/me.png';
 import { motion } from 'framer-motion/dist/framer-motion';
 
-const Contact = () => {
+const Contact = (props) => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, [])
@@ -53,6 +53,8 @@ const Contact = () => {
         referral: Yup.string().required("* Required").max(100, "* 100 maximum characters").required("* Required")
     });
 
+    const { loading } = props;
+
     return (
         <>
             <Helmet >
@@ -64,7 +66,7 @@ const Contact = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
-                <section id='contact'>
+                <section id='contact' className={loading ? '' : 'fade-in-screen'}>
                     <div>
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>

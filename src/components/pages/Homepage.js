@@ -10,10 +10,12 @@ import Services from '../Services';
 import Testimonials from '../Testimonials';
 import ContactBar from '../ContactBar';
 
-export default function Homepage() {
+export default function Homepage(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const { loading } = props;
     
     return (
         <>
@@ -23,7 +25,7 @@ export default function Homepage() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
-                <header>
+                <header className={loading ? '' : 'fade-in-screen'}>
                     <h1>Builder of Graceful Digital Stories</h1>
                     <h2>I design and code beautiful yet simple things and love what I do.</h2>
                     <div className='btn-wrap'>
@@ -35,7 +37,7 @@ export default function Homepage() {
                         <img src={computer} alt='desktop workspace' />
                     </div>
                 </header>
-                <main>
+                <main className={loading ? '' : 'fade-in-screen'}>
                     <About />
                     <Services />
                     <Projects />

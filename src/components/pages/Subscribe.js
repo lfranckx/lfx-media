@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import '../../styles/Subscribe.scss';
+import '../../styles/pages/Subscribe.scss';
 import computer from '../../images/computer.png';
 import SignUpForm from '../SignUpForm';
 import { motion } from 'framer-motion/dist/framer-motion';
 
-export default function SubscribePage() {
+export default function SubscribePage(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const { loading } = props;
 
     return (
         <>
@@ -22,7 +24,7 @@ export default function SubscribePage() {
                 exit={{ opacity: 0 }}
                 id='subscribe-page'
             >
-                <header>
+                <header className={loading ? '' : 'fade-in-screen'}>
                     <div className='container'>
                         <div className='text-wrap'>
                             <h1>Being a web developer is tough.</h1>

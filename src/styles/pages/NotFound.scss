@@ -17,6 +17,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
 
+    &.fade-in-screen {
+        opacity: 1;
+        transition: all 1s ease;
+    }
+
     h1 {
         span { 
             display: block;
