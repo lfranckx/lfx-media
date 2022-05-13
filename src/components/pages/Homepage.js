@@ -24,8 +24,8 @@ export default function Homepage() {
                 exit={{ opacity: 0 }}
             >
                 <header>
-                    <h1>Web Developer, Full-stack Engineer &amp; SEO Manager</h1>
-                    <h2>I build beautiful and effective online stores that help businesses succeed.</h2>
+                    <h1>Builder of Graceful Digital Stories</h1>
+                    <h2>I code beautiful yet simple things and love what I do.</h2>
                     <div className='btn-wrap'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
                             View my work <i className="fas fa-chevron-circle-right" />
