@@ -19,8 +19,9 @@ const SignUpForm = () => {
                 name: name
             };
 
+            handleBtnMessage('Sending...');
             await axios.post("https://serene-journey-81970.herokuapp.com/", payload);
-            handleBtnMessage('Sent');
+            handleBtnMessage('Sent!');
             handleBtnDisabled(true);
             handleMessage({ name: name, email: email});
 

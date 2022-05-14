@@ -10,12 +10,12 @@ header {
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 3rem;
         margin-bottom: 8px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 1.4rem;
         font-family: 'Europa', 'Montserrat', sans-serif;
         font-weight: 300;
         line-height: 1.5;
@@ -42,17 +42,33 @@ header {
         padding: 64px 32px 0;
 
         h1 { 
-            font-size:30px; 
+            font-size: 2.4rem; 
             padding-left: 20px;
             padding-right: 20px;
         }
 
         h2 {
-            font-size: 18px;
+            font-size: 1.1rem;
         }
 
         img {
-            max-width: 90%;
+            max-width: 80%;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        h1 { 
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        img {
+            max-width: 100%;
         }
     }
 }

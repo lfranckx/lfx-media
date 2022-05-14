@@ -14,7 +14,7 @@ export default function Services() {
                 <ul>
                     <li>
                         <div className='card'>
-                            <i className="fas fa-drafting-compass"></i>
+                            <i className="icon fas fa-drafting-compass"></i>
                             <h2>Design</h2>
                             <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
 
@@ -25,7 +25,7 @@ export default function Services() {
                     </li>
                     <li>
                         <div className='card'>
-                            <i className="fas fa-laptop-code"></i>
+                            <i className="icon fas fa-laptop-code"></i>
                             <h2>Development</h2>
                             <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
                             <div className='btn-wrap'>
@@ -35,7 +35,7 @@ export default function Services() {
                     </li>
                     <li>
                         <div className='card'>
-                            <i className="fas fa-search-dollar"></i>
+                            <i className="icon fas fa-search-dollar"></i>
                             <h2>SEO</h2>
                             <p>Search Engine Optimization is the practice of improving and promoting a website in order to increase the number of visitors through search engines such as Google.</p>
                             <div className='btn-wrap'>

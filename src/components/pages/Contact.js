@@ -71,7 +71,7 @@ const Contact = (props) => {
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
-                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out. How can I help you today?</span></h1>
+                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out.</span><span>How can I help you today?</span></h1>
                     {message && <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for reaching out {message.name}.</span><span>I normally respond within 1-2 business days.</span></h1>}
 
                     <Formik 

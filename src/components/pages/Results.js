@@ -51,7 +51,7 @@ export default function Results(props) {
                                     <h2>Total Sales:</h2>
                                     <h3>+685%</h3>
                                     <div className='btn-wrap'>
-                                        <button onClick={() => toggleSalesCard(!salesCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                        <button className="btn-secondary" onClick={() => toggleSalesCard(!salesCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
                                     </div>
                                 </div>
                             </li>
@@ -60,7 +60,7 @@ export default function Results(props) {
                                     <h2>Organic Traffic:</h2>
                                     <h3>+162%</h3>
                                     <div className='btn-wrap'>
-                                        <button onClick={() => toggleTrafficCard(!trafficCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                        <button className="btn-secondary" onClick={() => toggleTrafficCard(!trafficCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
                                     </div>
                                 </div>
                             </li>
@@ -69,7 +69,7 @@ export default function Results(props) {
                                     <h2>Returning Customers:</h2>
                                     <h3>+40%</h3>
                                     <div className='btn-wrap'>
-                                        <button onClick={() => toggleReturningCard(!returningCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                        <button className="btn-secondary" onClick={() => toggleReturningCard(!returningCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
                                     </div>
                                 </div>
                             </li>
@@ -78,7 +78,7 @@ export default function Results(props) {
                                     <h2>Conversion Rate:</h2>
                                     <h3>+47%</h3>
                                     <div className='btn-wrap'>
-                                        <button onClick={() => toggleConversionCard(!conversionCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                        <button className="btn-secondary" onClick={() => toggleConversionCard(!conversionCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
                                     </div>
                                 </div>
                             </li>

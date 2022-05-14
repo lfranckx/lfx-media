@@ -10,7 +10,6 @@
     }
 
     h1 {
-        font-size: 24px;
         max-width: 500px;
         margin: auto;
         font-weight: 400;
@@ -20,10 +19,6 @@
             display: block; 
             max-width: 650px;
             margin: auto;
-        }
-
-        @media (max-width: 900px) {
-            font-size: 28px;
         }
 
         @media (max-width: 600px) {
@@ -54,15 +49,10 @@
             display: block;
         }
     }
-    
-    label { 
-        font-size: 20px; 
-    }
 
     input, textarea {
-        font-size: 20px;
         margin: 10px 0;
-        padding: 10px;
+        padding: 8px;
         width: 400px;
 
         @media(max-width: 700px) {
@@ -79,10 +69,6 @@
     }
 
     .btn { 
-        color: #1ba49c;
-        &:hover, &:disabled { 
-            color: #fff; 
-        }
         margin-top: 16px;
     }
 
