@@ -7,9 +7,12 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <Link to={'/'}>
-                    <h1><img src={white} alt='white logo' width='100px'/></h1>
-                </Link>
+                <div className='logo-wrap'>
+                    <Link to={'/'}>
+                        <h1><img src={white} alt='white logo' width='100px'/></h1>
+                    </Link>
+                </div>
+                
                 
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
                 <ul>
