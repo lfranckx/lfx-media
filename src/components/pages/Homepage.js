@@ -26,7 +26,7 @@ export default function Homepage(props) {
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <h1>Web Designer, Developer, &amp; SEO Manager</h1>
+                    <h1>Web Developer &amp; SEO Manager</h1>
                     <h2>I design and code beautiful yet simple things and love what I do.</h2>
                     <div className='btn-wrap hide'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
