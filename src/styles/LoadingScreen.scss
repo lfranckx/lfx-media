@@ -12,7 +12,6 @@
     }
     
     &.hidden {
-        // height: 0;
         z-index: -1;
         transition: all .8s ease;
     }
