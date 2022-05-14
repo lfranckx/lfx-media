@@ -22,11 +22,11 @@ function App() {
     }, 8800);
   }, [])
 
-  if (loading) {
-    document.body.classList.add('no-scroll');
-  } else {
-    document.body.classList.remove('no-scroll');
-  }
+  // if (loading) {
+  //   document.body.classList.add('no-scroll');
+  // } else {
+  //   document.body.classList.remove('no-scroll');
+  // }
 
   return (
     <>
