@@ -17,7 +17,7 @@ export default function Footer() {
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
                 <ul>
                     <li>
-                        <a href='https://twitter.com/lachnr0ll'
+                        <a href='https://twitter.com/lfxmedia'
                             target="_blank"
                             rel="noopener noreferrer"
                         >
