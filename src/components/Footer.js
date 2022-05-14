@@ -9,7 +9,7 @@ export default function Footer() {
             <footer>
                 <div className='logo-wrap'>
                     <Link to={'/'}>
-                        <h1><img src={white} alt='white logo' width='100px'/></h1>
+                        <h1><img src={white} alt='white logo' /></h1>
                     </Link>
                 </div>
                 

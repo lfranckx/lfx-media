@@ -8,13 +8,14 @@ footer {
 
     
     .logo-wrap {
-        width: 0;
+        max-width: 100px;
         margin: auto;
     }
 
     h1 {
         img {
             border-radius: 4px;
+            max-width: 100px;
         }
     }
 
