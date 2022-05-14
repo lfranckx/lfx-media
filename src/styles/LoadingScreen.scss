@@ -26,6 +26,7 @@
 
         &.fade-out {
             opacity: 0;
+            z-index: -1;
         }
         
         @media(max-width: 750px) {
