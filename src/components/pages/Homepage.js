@@ -28,7 +28,7 @@ export default function Homepage(props) {
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <h1>Web Developer &amp; SEO Manager</h1>
                     <h2>I design and code beautiful yet simple things and love what I do.</h2>
-                    <div className='btn-wrap hide'>
+                    <div className='btn-wrap'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
                             View my work <i className="fas fa-chevron-circle-right" />
                         </Link>
