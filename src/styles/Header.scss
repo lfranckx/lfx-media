@@ -33,7 +33,15 @@ header {
 
     img {
         margin-bottom: -4.2px;
-        max-width: 750px;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1800px) {
+    header {
+        img {
+            max-width: 750px;
+        }
     }
 }
 
