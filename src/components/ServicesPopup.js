@@ -20,7 +20,7 @@ export default function ServicesPopup(props) {
                     <div className='wrap'>
                         <h3>Design Tools:</h3>
                         <p>Figma</p>
-                        <p>InVision</p>
+                        <p>Photoshop</p>
                         <p>Canva</p>
                         <p>Pen &amp; Paper</p>
                     </div>
