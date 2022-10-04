@@ -22,17 +22,11 @@ function App() {
     }, 8800);
   }, [])
 
-  // if (loading) {
-  //   document.body.classList.add('no-scroll');
-  // } else {
-  //   document.body.classList.remove('no-scroll');
-  // }
-
   return (
     <>
       <Helmet >
         <title>LFX Media | Web Developer, Full-stack Engineer, &amp; SEO Manager</title>
-        <meta name='description' content='Lachlan Franckx | Builder of Graceful Digital Stories | I design and code beautiful yet simple things and love what I do.'/>
+        <meta name='description' content='Lachlan Franckx | Builder of Graceful Digital Stories. I design and code beautiful yet simple things and love what I do.'/>
         <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager' />
       </Helmet>
       <div className='app'>
