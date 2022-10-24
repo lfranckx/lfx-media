@@ -26,8 +26,8 @@ function App() {
     <>
       <Helmet>
         <title>LFX Media | Web Developer, Full-stack Engineer, &amp; SEO Manager</title>
-        <meta name='description' content='Lachlan Franckx | Builder of Graceful Digital Stories. I design and code beautiful yet simple things and love what I do.'/>
-        <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Manager, Dallas Web Designer, Web Design Services for Plano, Frisco, Richardson, Garland, Irving, Carrolton, Arlington, Mesquite, Lewisville, McKinney, Greenville, Denton.' />
+        <meta name='description' content='Lachlan Franckx | Web Developer & Web Designer | Builder of Graceful Digital Stories. I design and code beautiful yet simple things and love what I do.'/>
+        <meta name='keywords' content='Lachlan Franckx, Web Developer, Full-stack Engineer, Web Designer, &amp; SEO Speialist, Web Design Services in Dallas Fort Worth, Plano Web Designer, Frisco Web Developer, Web Design Richardson, Web Developer Garland, Web Development Irving, Carrolton, Arlington, Mesquite, Lewisville, McKinney, Greenville, Denton.' />
       </Helmet>
       <div className='app'>
         <Navbar />
