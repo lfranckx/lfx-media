@@ -9,8 +9,7 @@ export default function ContactBar() {
                 <div className='content-wrap'>
                     <h3>Start a Project</h3>
                     <p>
-                        Interested in working with me?<br/>
-                        Send me a message.
+                        Let's Work Together.
                     </p>
                     <Link className='btn' to='/contact'>Get Started</Link>
                 </div>
