@@ -33,7 +33,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/lachnr0ll/'
+                        <a href='https://www.linkedin.com/in/lachlanfranckx/'
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
