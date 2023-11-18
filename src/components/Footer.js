@@ -49,7 +49,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='mailto:lfranckx@gmail.com'
+                        <a href='mailto:lachlan@lfxmedia.io'
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
