@@ -7,7 +7,7 @@ export default function About () {
             <section id='about'>
                 <div className='container'>
                     <h2>Hi, I'm Lachlan. Nice to meet you.</h2>
-                    <p>I have been very fortunate to pursue my dream as a freelance web developer.  My experience has allowed me to collaborate with some of the leading educators, influencers, and companies in the hair and beauty industry. I am quietly confident, naturally curious, and perpetually growing my love and skill for my profession.</p>
+                    <p>As a dedicated freelance web developer, my dream has led me to collaborate across diverse sectors, including Medical Billing, Construction, E-Commerce, and more. Initially rooted in the hair and beauty industry, my portfolio has grown to encompass a variety of dynamic clients. I combine quiet confidence with an ever-curious approach, constantly honing my skills in this vibrant profession.</p>
                 </div>
             </section>
         </>
